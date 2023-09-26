@@ -3,7 +3,6 @@ html {
 }
 
 body {
-    background-color: aquamarine;
     color: black;
 }
 
@@ -16,10 +15,18 @@ body {
     width: 1.5rem;
 }
 
+hr {
+    margin: 0;
+}
 
-/* .main-logo-link {
+.main-logo-link {
     width: fit-content;
-} */
+}
+
+#logo-nav-bar {
+    max-height: 9rem;
+    max-width: 9rem;
+}
 
 .shop-now-button {
     background: black;
@@ -87,6 +94,6 @@ body {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 124px;
     }
 }
