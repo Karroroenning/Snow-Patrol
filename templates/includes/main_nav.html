@@ -29,9 +29,9 @@
                 Bindings
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Women</a>
-                <a href="" class="dropdown-item">Men</a>
-                <a href="" class="dropdown-item">Kids</a>
+                <a href="{% url 'products' %}?category=women_bindings" class="dropdown-item">Women Bindings</a>
+                <a href="{% url 'products' %}?category=men_bindings" class="dropdown-item">Men Bindings</a>
+                <a href="{% url 'products' %}?category=kids_bindings" class="dropdown-item">Kids Bindings</a>
             </div>
         </li>
 
@@ -39,9 +39,9 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Boots</a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Women</a>
-                <a href="" class="dropdown-item">Men</a>
-                <a href="" class="dropdown-item">Kids</a>
+                <a href="{% url 'products' %}?category=women_boots" class="dropdown-item">Women Boots</a>
+                <a href="{% url 'products' %}?category=men_boots" class="dropdown-item">Men Boots</a>
+                <a href="{% url 'products' %}?category=kids_boots" class="dropdown-item">Kids Boots</a>
             </div>
         </li>
 
