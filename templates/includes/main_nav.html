@@ -17,10 +17,10 @@
                 Snowboards
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Longboard</a>
-                <a href="" class="dropdown-item">Shortboard</a>
-                <a href="" class="dropdown-item">Softboard</a>
-                <a href="" class="dropdown-item">Stiffboard</a>
+                <a href="{% url 'products' %}?category=longboard" class="dropdown-item">Longboard</a>
+                <a href="{% url 'products' %}?category=shortboard" class="dropdown-item">Shortboard</a>
+                <a href="{% url 'products' %}?category=softboard" class="dropdown-item">Softboard</a>
+                <a href="{% url 'products' %}?category=stiffboard" class="dropdown-item">Stiffboard</a>
             </div>
         </li>
 
