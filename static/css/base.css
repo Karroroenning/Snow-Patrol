@@ -84,10 +84,27 @@ hr {
 	z-index: -1;
 }
 
+
+/* Hover over the category */
 a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
 }
+
+
+/* Back to the top button */
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
+}
+
 
 /* -------------------------------- Media Queries */
 
