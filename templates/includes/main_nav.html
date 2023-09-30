@@ -5,9 +5,9 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -21,6 +21,7 @@
                 <a href="{% url 'products' %}?category=shortboard" class="dropdown-item">Shortboard</a>
                 <a href="{% url 'products' %}?category=softboard" class="dropdown-item">Softboard</a>
                 <a href="{% url 'products' %}?category=stiffboard" class="dropdown-item">Stiffboard</a>
+                <a href="{% url 'products' %}?category=?category=,shortboard,softboard,stiffboard,longboard" class="dropdown-item">All Snowboards</a>
             </div>
         </li>
 
@@ -32,6 +33,7 @@
                 <a href="{% url 'products' %}?category=women_bindings" class="dropdown-item">Women Bindings</a>
                 <a href="{% url 'products' %}?category=men_bindings" class="dropdown-item">Men Bindings</a>
                 <a href="{% url 'products' %}?category=kids_bindings" class="dropdown-item">Kids Bindings</a>
+                <a href="{% url 'products' %}?category=?category=,women_bindings,men_bindings,kids_bindings" class="dropdown-item">All Bindings</a>
             </div>
         </li>
 
@@ -42,6 +44,7 @@
                 <a href="{% url 'products' %}?category=women_boots" class="dropdown-item">Women Boots</a>
                 <a href="{% url 'products' %}?category=men_boots" class="dropdown-item">Men Boots</a>
                 <a href="{% url 'products' %}?category=kids_boots" class="dropdown-item">Kids Boots</a>
+                <a href="{% url 'products' %}?category=?category=,women_boots,men_boots,kids_boots" class="dropdown-item">All Boots</a>
             </div>
         </li>
 
