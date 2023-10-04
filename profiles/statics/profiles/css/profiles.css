@@ -1,0 +1,13 @@
+
+/* placeholder, där man skriver in sin egen info */
+
+
+/*  Efter man skriver in info */
+#profile-update-form .form-control {
+    color: #000;
+}
+
+/* Innan man skriver in info */
+#profile-update-form input::placeholder {
+    color: #aab7c4;
+}
