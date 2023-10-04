@@ -11,3 +11,13 @@
 #profile-update-form input::placeholder {
     color: #aab7c4;
 }
+
+/* Färgen på country field */
+#id_default_country,
+#id_default_country option:not(:first-child) {
+    color: #000;
+}
+
+#id_default_country option:first-child {
+    color: #aab7c4;
+}
