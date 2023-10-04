@@ -1,6 +1,10 @@
+.order-history {
+    max-height: 416px; /* height of profile form + submit button */
+    overflow-y: auto;
+}
+
 
 /* placeholder, där man skriver in sin egen info */
-
 
 /*  Efter man skriver in info */
 #profile-update-form .form-control {
