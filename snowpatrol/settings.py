@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-x1f&(dym4u+3x+$^y(r%8q#9mqh19g-$3_4!9q1mvps$+$b&@v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-karroroennin-snowpatrol-9s084sgh059.ws-eu105.gitpod.io', "snowpatrol.herokuapp.com", "localhost"]
+ALLOWED_HOSTS = ['8000-karroroennin-snowpatrol-9s084sgh059.ws-eu105.gitpod.io', 'snowpatrol-6b2d334410bf.herokuapp.com', "localhost"]
 
 
 # Application definition
