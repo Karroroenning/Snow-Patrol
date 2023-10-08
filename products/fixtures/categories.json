@@ -12,7 +12,7 @@
     "model": "products.category",
     "fields": {
       "name": "softboard_and_stiffboard",
-      "friendly_name": "Softboard"
+      "friendly_name": "Softboard and Stiffboard"
     }
   },
   {
