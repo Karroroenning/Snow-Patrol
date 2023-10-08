@@ -1,0 +1,66 @@
+[
+  {
+    "pk": 1,
+    "model": "products.category",
+    "fields": {
+      "name": "longboard_and_shortboard",
+      "friendly_name": "Longboard and Shortboard"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.category",
+    "fields": {
+      "name": "softboard_and_stiffboard",
+      "friendly_name": "Softboard"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.category",
+    "fields": {
+      "name": "women_and_men_bindings",
+      "friendly_name": "Women and Men Bindings"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.category",
+    "fields": {
+      "name": "kids_bindings",
+      "friendly_name": "Kids Bindings"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.category",
+    "fields": {
+      "name": "women_and_men_boots",
+      "friendly_name": "Women and Men Boots"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.category",
+    "fields": {
+      "name": "kids_boots",
+      "friendly_name": "Kids Boots"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.category",
+    "fields": {
+      "name": "new_arrivals",
+      "friendly_name": "New Arrivals"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.category",
+    "fields": {
+      "name": "deals",
+      "friendly_name": "Deals"
+    }
+  }
+]

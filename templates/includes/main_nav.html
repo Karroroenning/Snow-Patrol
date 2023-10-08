@@ -17,11 +17,9 @@
                 Snowboards
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'products' %}?category=longboard" class="dropdown-item">Longboard</a>
-                <a href="{% url 'products' %}?category=shortboard" class="dropdown-item">Shortboard</a>
-                <a href="{% url 'products' %}?category=softboard" class="dropdown-item">Softboard</a>
-                <a href="{% url 'products' %}?category=stiffboard" class="dropdown-item">Stiffboard</a>
-                <a href="{% url 'products' %}?category=?category=,shortboard,softboard,stiffboard,longboard" class="dropdown-item">All Snowboards</a>
+                <a href="{% url 'products' %}?category=longboard_and_shortboard" class="dropdown-item">Longboard and Shortboard</a>
+                <a href="{% url 'products' %}?category=softboard_and_stiffboard" class="dropdown-item">Softboard And Stiffboard</a>
+                <a href="{% url 'products' %}?category=?category=,longboard_and_shortboard,softboard_and_stiffboard" class="dropdown-item">All Snowboards</a>
             </div>
         </li>
 
@@ -30,10 +28,9 @@
                 Bindings
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="{% url 'products' %}?category=women_bindings" class="dropdown-item">Women Bindings</a>
-                <a href="{% url 'products' %}?category=men_bindings" class="dropdown-item">Men Bindings</a>
+                <a href="{% url 'products' %}?category=women_and_men_bindings" class="dropdown-item">Women and Men Bindings</a>
                 <a href="{% url 'products' %}?category=kids_bindings" class="dropdown-item">Kids Bindings</a>
-                <a href="{% url 'products' %}?category=?category=,women_bindings,men_bindings,kids_bindings" class="dropdown-item">All Bindings</a>
+                <a href="{% url 'products' %}?category=?category=,women_and_men_bindings,kids_bindings" class="dropdown-item">All Bindings</a>
             </div>
         </li>
 
@@ -41,10 +38,9 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Boots</a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=women_boots" class="dropdown-item">Women Boots</a>
-                <a href="{% url 'products' %}?category=men_boots" class="dropdown-item">Men Boots</a>
+                <a href="{% url 'products' %}?category=women_and_men_boots" class="dropdown-item">Women and Men Boots</a>
                 <a href="{% url 'products' %}?category=kids_boots" class="dropdown-item">Kids Boots</a>
-                <a href="{% url 'products' %}?category=?category=,women_boots,men_boots,kids_boots" class="dropdown-item">All Boots</a>
+                <a href="{% url 'products' %}?category=?category=,women_and_men_boots,kids_boots" class="dropdown-item">All Boots</a>
             </div>
         </li>
 
@@ -53,10 +49,8 @@
                 Deals
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
             </div>
         </li>
     </ul>

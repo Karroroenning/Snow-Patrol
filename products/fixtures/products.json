@@ -1,0 +1,315 @@
+[
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001340155",
+      "name": "Men's Burton Custom X Camber Snowboard",
+      "description": "Hard Charging Precision Pro-caliber is a strong statement for any board, but the men's Burton Custom X Snowboard repeatedly delivers for snowboarding's most demanding riders thanks to precise design and powerful drive. The hardest charging board we make, its carbon-fueled snap and twin flex inspire speed and the freedom to explore. The camber is dialed for powerful turns and poppy precision with weight distributed evenly across the entire board for continuous edge control from tip to tail.",
+      "price": 780,
+      "category": 1,
+      "rating": 4.6,
+      "image": "10688110960_1.webp"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001600425",
+      "name": "Men's Burton Process Flying V Snowboard",
+      "description": "Performance Tuned for Freestyle Playfulness Channel the effortless style of Burton rider Mark McMorris with this twin shape that's tuned to pack power when you need it. The men's Burton Process Snowboard, with the coveted panda graphic, is Mark McMorris' pick for its twin freestyle playfulness and all-terrain prowess. This lift-off ready deck has you covered with plenty of pop and the floaty ease of our Flying V bend.",
+      "price": 520,
+      "category": 1,
+      "rating": 4.2,
+      "image": "10697108000_1.webp"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001730010",
+      "name": "Men's Burton Custom Camber Snowboard",
+      "description": "Poppy, Versatile, and Fun From its humble beginnings, innovation has defined the Burton Custom Snowboard series and set it apart as the most popular, versatile, and mimicked board in snowboarding. Since 1996, this icon has reigned supreme while constantly evolving with a proven formula that combines time-honored design with next-gen ingredients to create a lightweight, poppy, and highly versatile board. When it comes to stability and precision, the Custom Camber is the top choice for many Burton pro riders.",
+      "price": 630,
+      "category": 1,
+      "rating": 3.8,
+      "image": "10708110000_1.webp"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001890157",
+      "name": "Men's Burton Deep Thinker Camber Snowboard",
+      "description": "Go Deep On Park Hot Laps and Natural Features. The men's Burton Deep Thinker Snowboard is a directional spin on team rider Danny Davis' go-to board for hot laps in the park, pipe, or mobbing side hits across the mountain. This fun, snappy ride keeps the freestyle performance turned up to 10, while upping the float and responsiveness for a balanced freeride feel with all-mountain versatility.",
+      "price": 610,
+      "category": 2,
+      "rating": 3.5,
+      "image": "10712110000_1.webp"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002111605",
+      "name": "Women's Burton Talent Scout Camber Snowboard",
+      "description": "Bad-Ass with a Touch of Sass. The women's Burton Talent Scout Snowboard is on a mission to track down the best of park performance. It steps up the attitude from other twins with a pro-driven camber profile that gives you the power, control, and finesse to thrive on all terrain. Its flex is tuned for lighter riders and lets you take full advantage of the edge and bend to get creative as you like.",
+      "price": 520,
+      "category": 2,
+      "rating": 5,
+      "image": "10696108000_1.webp"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002260206",
+      "name": "Kids' Burton After School Special Snowboard Package",
+      "description": "Easier Than a Tricycle with Training Wheels. Even the kids know this is the best deal going. Better than watching hours of cartoons, the kids' Burton After School Special Snowboard Package makes learning a cinch with super soft, parent-friendly bindings and a saucer-like snowboard that teaches balance and board control. With the fully-adjustable bindings premounted in a beginner-friendly stance, simply grab the package and go. It doesn't get any easier than this.",
+      "price": 270,
+      "category": 2,
+      "rating": 4.7,
+      "image": "13218109000_1.webp"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002440521",
+      "name": "Burton Blossom Camber Snowboard",
+      "description": "Get Creative. Free to be. Free to create. Left to their own devices, team riders got creative and designed the Burton Blossom Snowboard. It sets you up with a solid true twin platform to spin, stomp, and ride as you like.",
+      "price": 570,
+      "category": 1,
+      "rating": 4.4,
+      "image": "15977104000_1.webp"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002601115",
+      "name": "Women's Burton Feelgood Camber Snowboard",
+      "description": "A Spirited Ride to Make You Feel Good. When you want every advantage for chasing lines and exploring natural hits, the women's Burton Feelgood Snowboard sets you up for success. Backed by Burton rider Kelly Clark, it boasts a unique shape, matched the stable suspension of camber and positively powerful pop for Ferrari-like handing. Directional shaping navigates easily through variable conditions, making this our number one board for conquering all terrain.",
+      "price": 585,
+      "category": 1,
+      "rating": 4.5,
+      "image": "17200107000_1.webp"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002690715",
+      "name": "Men's Burton Free Thinker Camber Snowboard",
+      "description": "Open the Door to Possibility. The men's Burton Free Thinker Snowboard is a true twin spin on Danny Davis' go-to, built for hot laps in the park, pipe, or mobbing side hits across the mountain. True twin symmetry opens up the possibilities for creative expression in any direction, while the control of camber keeps it quick and poppy.",
+      "price": 610,
+      "category": 2,
+      "rating": 4.7,
+      "image": "20963102000_1.webp"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002701115",
+      "name": "Burton Mystery Hometown Hero Camber Snowboard",
+      "description": "Full Gas Attitude meets Lightweight Agility. The Burton Mystery Hometown Hero Snowboard takes the go-fast, all-terrain ride of the HTH and turns it up a notch. The Mystery Construction is our highest-end and most technical lightweight build. It gives the already versatile, quick-turning, and directional ride of the HTH a high-energy feel for chasing side hits and blasting through untracked tree stashes.",
+      "price": 487,
+      "category": 2,
+      "rating": 4.4,
+      "image": "22235103000_1.webp"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002761055",
+      "name": "Women's Burton Hideaway Flat Top Snowboard",
+      "description": "Put a creative spin on all terrain with a playful and stable board that charges ahead and inspires confidence. A little fun with a lot of function, the Burton Hideaway Snowboard is the perfect tool for taking a no-limits approach to the whole mountain. Plenty playful, a Flat Top Bend offers the forgiving freedom and stability to take on any terrain or condition. Its directional shape concentrates pop in the tail while providing plenty of float, flow, and control to rip any terrain or conditions. A sintered base keeps it fast, even if you have no time to wax it.",
+      "price": 425,
+      "category": 2,
+      "rating": 5,
+      "image": "22239101000_1.webp"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002820069",
+      "name": "Women's Burton Feelgood Flying V Snowboard",
+      "description": "Rider-proven and continually updated, this board sets the standard for all-mountain riding. Backed by Kelly Clark, the women's Burton Feelgood Snowboard has been the defining force in women's snowboarding for two decades. It boasts a unique shape, matched with positively powerful pop for Ferrari-like handing. Directional shaping navigates easily through variable conditions, making this our number one board for conquering all terrain. Available with the stable suspension of camber or the rocker-infused freedom of Flying V, the Feelgood is a perfect match for aspiring pros or just riders who demand every advantage.",
+      "price": 486,
+      "category": 1,
+      "rating": 4.6,
+      "image": "22240101000_1.webp"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002820147",
+      "name": "Women's Burton Step On® Re:Flex Snowboard Bindings",
+      "description": "Simple. Secure. All-Mountain. Step up to Step On®. The women's Burton Step On® Re:Flex Snowboard Bindings pair an intuitive boot-to-binding connection with all-mountain performance. Three connection points, two at the toe and one at the heel, deliver unmatched simplicity, security, and board control.",
+      "price": 300,
+      "category": 3,
+      "rating": 3.2,
+      "image": "17284108501_1.webp"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002910572",
+      "name": "Women's Burton Citizen Re:Flex Snowboard Bindings",
+      "description": "Laid-Back Flex and All-Day Comfort. Treat your feet to the laid-back, buttery feel of the women's Burton Citizen Re:Flex Snowboard Bindings. They balance a forgiving flex with the support to push your skills and the comfort to cruise all day. They're a breeze to buckle into and built to keep you riding without worrying about your gear.",
+      "price": 180,
+      "category": 3,
+      "rating": 4.7,
+      "image": "10546110500_1.webp"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002990740",
+      "name": "Men's Burton Step On® Re:Flex Snowboard Bindings",
+      "description": "Simple. Secure. All-Mountain. Step up to Step On®. The men's Burton Step On® Re:Flex Snowboard Bindings pair an intuitive boot-to-binding connection with all-mountain performance. Three connection points, two at the toe and one at the heel, deliver unmatched simplicity, security, and board control.",
+      "price": 300,
+      "category": 3,
+      "rating": 4.8,
+      "image": "17283106002_1.webp"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003050248",
+      "name": "Men's Burton Cartel X EST® Snowboard Bindings",
+      "description": "Lightweight, Versatile, Responsive. A legendary blend of comfort and all-terrain versatility updated for even lighter, more responsive performance. The men's Burton Cartel X EST® Snowboard Bindings are a shred-it-all binding made for pro-caliber control. From increased board feel to a freestyle-minded zero forward lean, the EST edition is loaded with our top performance features to keep you pushing your skill and riding longer.",
+      "price": 330,
+      "category": 3,
+      "rating": 4.4,
+      "image": "10557108400_1.webp"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003070787",
+      "name": "Kids' Burton Step On® Grom Snowboard Bindings",
+      "description": "The Power of Independence. Independence is a powerful learning tool. Designed in collaboration with Burton employees and their kids, the kids' Burton Step On® Grom Snowboard Bindings make it a cinch for even the smallest riders to achieve snowboarding independence. Built specifically for kids, there are release levers at the toe and heel for added ease of use. Like the name says, it's a step on and ride scenario.",
+      "price": 160,
+      "category": 4,
+      "rating": 4.4,
+      "image": "20314102001_1.webp"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003090182",
+      "name": "Toddlers' Burton Mini Grom Disc Snowboard Bindings",
+      "description": "Easy Does It. Free your little rider to strap in and cruise on their own with the toddlers' Burton Mini Grom Disc bindings. The single-buckle, mitten-friendly design helps kids master buckling in and enjoy the freedom of riding on their own.",
+      "price": 100,
+      "category": 4,
+      "rating": 4.8,
+      "image": "10577104001_1.jpg"
+    }
+  },
+  {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003090186",
+      "name": "Women's Burton Ritual Step On® Snowboard Boots",
+      "description": "Keepin' it Simple to Keep You Riding. The women's Burton Ritual Step On® Snowboard Boots are in a league of their own. Think foot-hugging comfort and cushioning that doesn't weigh you down, plus the most intuitive board connection in snowboarding. We're talking cruising and blasting the day away with a medium stiff feel that's playful and responsive enough to push your skills. Add our warmest liners, and we're talking happy feet that leave you focused on what run to hit next.",
+      "price": 390,
+      "category": 5,
+      "rating": 5,
+      "image": "21428103020_1.webp"
+    }
+  },
+  {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003161326",
+      "name": "Women's Burton Limelight Step On® Snowboard Boots",
+      "description": "Make it Look Easy, All Day Long. Dial in the fit, step on, and ride. That's what the women's Burton Limelight Step On® Snowboard Boots deliver, so you can jib, butter, and carve the day away with foot-hugging comfort right out of the box. They balance all-day comfort with a relaxed feel for versatile performance. The intuitive connection of the Step On® system makes for clean lift transition and consistent board control. Top-of-the-line warmth and comfort comes from insulated, heat-moldable liners matched with heat-reflective tech to keep you riding and smiling, all day long",
+      "price": 330,
+      "category": 5,
+      "rating": 4.7,
+      "image": "13177108501_1.webp"
+    }
+  },
+  {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003230723",
+      "name": "Men's Burton Photon Step On® Snowboard Boots",
+      "description": "Just Step On and Charge as Hard You Like. Explore. Experiment. Charge. Locked and loaded power meets Step On® convenience in the men's Burton Photon Step On® Snowboard Boots. A precision fit and responsive feel encourage you to push your riding further. From the ease of Step On® to the support you need to charge at any level, the Photon has your back when it's time to do more on your board. It's a boot with few limits, right down to its fit and comfort that are made for riders who like to push for the edge.",
+      "price": 435,
+      "category": 5,
+      "rating": 4.3,
+      "image": "20319103001_1.webp"
+    }
+  },
+  {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003270936",
+      "name": "Men's Burton Photon BOA® Snowboard Boots",
+      "description": "Locked and Loaded Power. Charge harder. Explore more. Stomp every move. The men's Burton Photon BOA® Snowboard Boots let you dial in a precision fit for a responsive feel that encourages you to push your riding. From hike-friendly outsoles for better footing on the boot pack to our most complete cushioning and comfort for enhanced feel and control, the Photon has your back when it's time to do more on your board. It's a boot with few limits, right down to its fit and secure foot lock down that are made for riders who like to push for the edge.",
+      "price": 400,
+      "category": 5,
+      "rating": 5,
+      "image": "13176109301_1.webp"
+    }
+  }
+  ,
+  {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003360384",
+      "name": "Kids' Burton Grom Step On® Snowboard Boots",
+      "description": "Look Mom, No Laces, No Straps. Put the power of independence in their hands. The kids' Burton Grom Step On® Snowboard Boots double the freedom with the intuitive ease of a step on binding system and the simplified lacing of the BOA® Fit System. Just step in, dial up the fit, and ride. It doesn't get much more kid-friendly than that.",
+      "price": 190,
+      "category": 6,
+      "rating": 4.8,
+      "image": "23597100020_1.webp"
+    }
+  },
+  {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003440111",
+      "name": "Kids' Burton Grom BOA® Snowboard Boots",
+      "description": "Look Mom, No Laces. Set your little shredder up for independence and a comfy ride. The kids' Burton Grom BOA® Snowboard Boots put kids in control with the BOA® Fit System and a mellow flex that lets them bend and move as they learn to control their board. Bunny hill or groomers, there's a wide world of mini-shred possibilities.",
+      "price": 150,
+      "category": 6,
+      "rating": 3.8,
+      "image": "10627105001_1.webp"
+    }
+  }
+]
