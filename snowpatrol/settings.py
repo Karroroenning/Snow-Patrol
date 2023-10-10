@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
-    'wishlist',
+    'wishlists',
 
     # Other
     'crispy_forms',
@@ -118,6 +118,7 @@ LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'snowpatrol.wsgi.application'
+
 
 
 # Database
