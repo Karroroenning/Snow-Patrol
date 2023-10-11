@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load crispy_forms_tags %}
 
 {% block page_header %}
     <div class="container header-container">
@@ -125,52 +126,52 @@
         </div>
     </div>
     <div class="container">
-        {% if product.reviews %}
-        <div class="row mb-4">
-            <hr>
-            <h2>Reviews</h2>
-            <hr>
-        </div>
-    
-        <div class="row justify-content-center">
-            {% for review in product.reviews.all %}
-            {% if review.approved %}
-            <div class="col-lg-6 text-center mb-5">
-                <div class="card">
-                    <div class="card-body">
-                        <h3>{{ review.title }}</h3>
-                        <p>{{ review.content }}</p>
-                        {% if review.user == user %}
-                        <p>Written by: {{ review.user }}</p>
-    
-    
-                        <a href="#">Edit</a> |
-                        <a onclick="return confirm('Are you sure you want to Delete? This action is PERMANENT.');"
-                            class='text-danger' href="#">Delete</a>
-                        {% endif %}
-                    </div>
+    {% if product.reviews %}
+    <div class="row mb-4">
+        <hr>
+        <h2>Reviews</h2>
+        <hr>
+    </div>
+
+    <div class="row justify-content-center">
+        {% for review in product.reviews.all %}
+        {% if review.approved %}
+        <div class="col-lg-6 text-center mb-5">
+            <div class="card">
+                <div class="card-body">
+                    <h3>{{ review.title }}</h3>
+                    <p>{{ review.content }}</p>
+                    {% if review.user == user %}
+                    <p>Written by: {{ review.user }}</p>
+
+
+                    <a href="{% url 'edit_review' review.id %}">Edit</a> |
+                    <a onclick="return confirm('Are you sure you want to Delete? This action is PERMANENT.');"
+                        class='text-danger' href="{% url 'delete_review' review.id %}">Delete</a>
+                    {% endif %}
                 </div>
             </div>
-            {% endif %}
-            {% endfor %}
-            {% endif %}
         </div>
-        <div class="row justify-content-center">
-            <div class="ml-4 mr-4 col-lg-8 pt-5 allauth-form-inner-content">
-                {% if user.is_authenticated %}
-                <h2>Add a review</h2>
-                <p>If you have purchased this item in the past then please leave a review. Admin will verify your purchase
-                    before approving.</p>
-                <form method="POST">
-                    {{ form | crispy }}
-                    {% csrf_token %}
-                    <button class='btn btn-outline-primary mb-5' type="submit">Submit Review</button>
-                </form>
-                {% endif %}
-            </div>
-        </div>
-    
+        {% endif %}
+        {% endfor %}
+        {% endif %}
     </div>
+    <div class="row justify-content-center">
+        <div class="ml-4 mr-4 col-lg-8 pt-5 allauth-form-inner-content">
+            {% if user.is_authenticated %}
+            <h2>Add a review</h2>
+            <p>If you have purchased this item in the past then please leave a review. Admin will verify your purchase
+                before approving.</p>
+            <form method="POST">
+                {{ form | crispy }}
+                {% csrf_token %}
+                <button class='btn btn-outline-primary mb-5' type="submit">Submit Review</button>
+            </form>
+            {% endif %}
+        </div>
+    </div>
+
+</div>
 {% endblock %}
 
 {% block postloadjs %}
