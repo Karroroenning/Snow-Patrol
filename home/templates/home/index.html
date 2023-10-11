@@ -28,11 +28,32 @@
                     Don't miss the launch of the new collection 2024
                 </h2>
                 <!-- Button for the subscribe -->
-                <div class="my-5">
-                    <h4>
-                        <a href="" class="subscribe-now-button btn btn-lg rounded-0 text-uppercase py-3">subscribe now!</a>
-                    </h4>
-                </div>
+                <div class="container p-4">
+                        <section class="">
+                            <form action="{% url 'subscribe' %}" method="post">
+                                <div class="row d-flex justify-content-center">
+                                {% csrf_token %}
+            
+                                    <div class="col-auto">
+                                        <p class="pt-2">Subscribe for our newsletter</p>
+                                    </div>
+            
+                                    <div class="col-auto">
+                                        <input id="name" name="name" class="form-control" placeholder="Your Name"/>
+                                    </div>
+            
+                                    <div class="col-auto">
+                                        <input id="email" name="email" type="email" class="form-control" placeholder="Email address"/>
+                                    </div>
+            
+                                    <div class="col-auto">
+                                        <button type="submit" class="btn btncolor">
+                                            <i class="fa fa-arrow-circle-right fa-lg"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
             </div>
         </div>
     </div>
