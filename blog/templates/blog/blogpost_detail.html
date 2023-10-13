@@ -1,44 +1,56 @@
 {% extends 'base.html' %} 
-{% block content %}
 {% load crispy_forms_tags %}
 {% load static %}
+{% block content %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+<section>
+    <div class="container-fluid px-4 px-lg-5">
+        <h2 class="mb-4 mt-3 text-center top-text">
+            {{ blogpost.title }}
+        </h2>
+        <hr class="hr_detail">
+    </div>
+</section>
+
 
 
 <div class="masthead">
     <div class="container">
         <div class="row g-0">
             <div class="col-md-6 masthead-text">
-                <h1 class="post-title">{{ blogpost.title }}</h1>
                 <p class="post-subtitle">{{ blogpost.author }} | {{ blogpost.created_on }}</p>
+                <div class="card-body">
+                    <div class="card-text ">
+                        {{ blogpost.content | safe }}
+                    </div>
+                </div>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The placeholder image -->
                 {% if "placeholder" in blogpost.featured_image.url %}
-                    <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.blogpost.title }}">
+                    <img class="card-img-top img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.blogpost.title }}">
                     <!-- Display the post image or a placeholder image -->
                     {% else %}
-                    <img class="img-fluid rounded" src=" {{ blogpost.image.url }}" alt="{{ item.blogpost.title }}">
+                    <img class="card-img-top img-fluid rounded" src=" {{ blogpost.image.url }}" alt="{{ item.blogpost.title }}">
                  </div>
                 {% endif %}
             </div>
         </div>
     </div>
 </div>
-<div class="container">
-    <div class="row">
-        <div class="col card mb-4  mt-3 left  top">
-            <div class="card-body">
-                <div class="card-text ">
-                    {{ blogpost.content | safe }}
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <hr>
-        </div>
-    </div>
 </div>
+<hr class="hr_detail">
 
 {% endblock content %}
