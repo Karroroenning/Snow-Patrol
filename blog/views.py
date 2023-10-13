@@ -26,7 +26,7 @@ class BlogDetail(View):
 
         return render(
             request,
-            "blog_detail.html",
+            "blog/blogpost_detail.html",
             {
                 "blogpost": blogpost,
                 "liked": liked,
@@ -42,7 +42,7 @@ class BlogDetail(View):
 
         return render(
             request,
-            "blog_detail.html",
+            "blog/blogpost_detail.html",
             {
                 "blogpost": blogpost,
                 "liked": liked,
@@ -60,7 +60,7 @@ class BlogLike(View):
         else:
             blogpost.likes.add(request.user)
 
-        return HttpResponseRedirect(reverse('blog_detail', args=[slug]))
+        return HttpResponseRedirect(reverse('blogpost_detail', args=[slug]))
 
 
 @login_required()
@@ -81,7 +81,7 @@ def add_blogpost(request):
             submitted = True
     return render(
         request,
-        'add_blogpost.html',
+        'blog/add_blogpost.html',
         {'blogpost_form': blogpost_form, 'submitted': submitted})
 
 
@@ -105,7 +105,7 @@ def edit_blogpost(request, slug):
             return redirect('blogpost')
     else:
         blogpost_form = BlogPostForm(instance=blogpost)
-    return render(request, "edit_blogpost.html", context)
+    return render(request, "blog/edit_blogpost.html", context)
 
 
 @login_required()

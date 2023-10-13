@@ -9,15 +9,20 @@ class BlogPostForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         self.fields['title'].required = True
 
-    class Meta:
-        """meta class"""
-        model = BlogPost
-        fields = (
-            'title',
-            'content',
-        )
 
-        labels = {
-            'title': 'Blog Title',
-            'content': 'Write your blog here',
-        }
+class Meta:
+    """meta class"""
+    model = BlogPost
+    fields = (
+        'title',
+        'author',
+        'content',
+        'featured_image',
+    )
+
+    labels = {
+        'title': 'Blog Title',
+        'author': 'Blog Author',
+        'content': 'Write your blogpost here',
+        'featured_image': 'cover image',
+    }
