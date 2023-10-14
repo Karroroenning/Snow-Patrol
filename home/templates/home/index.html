@@ -1,13 +1,9 @@
 {% extends "base.html" %}
 {% load static %}
+{% block content %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
-    <div class="header-container">
+    <div class="container header-container header">
         <div class="row">
             <div class="col"></div>
         </div>
@@ -15,25 +11,46 @@
 {% endblock %}
 
 
-{% block content %}
-<!-- Subscribe col on the fron page -->
-    <div class="container">
-        <div id="subscribe-main" class="row bg-white pt-lg-2 d-lg-flex">
-            <!-- New arrivals pictures -->
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+
+<div class="masthead">
+    <div class="container hero-img">
+        <div class="row g-0">
+            <div class="d-none d-md-block col-md-6 masthead-image">
+                <img class="card-img-top img-fluid rounded" src="/media/pexels-jeffrey-brandjes-6835492.jpg" alt=""> 
+             </div>
+            <div class="col-md-6 masthead-text">
+                <div class="card-body">
+                    <div class="card-text">
+                        <p>Check out our blog and get more inspiration about where your next slope will be!</p>
+                    </div>
+                    <div class="hero-buttons " style="animation-delay: 300.0ms;">
+                        <div class="hero-button">   
+                                <a class="btn btn-secondary hero-button-1" href="{% url 'blogpost' %}">
+                                    BLOG
+                                </a>
+                        </div>
+                </div>
+                </div>
             </div>
-            <!-- Subscrition text -->
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <h2 class="display-4 logo-font text-black">
-                    Don't miss the launch of the new collection 2024
-                </h2>
-                <!-- Button for the subscribe -->
-                <div class="container p-4">
-                        <section class="">
-                            <form action="#" method="post">
-                            </form>
-                        </section>
             </div>
         </div>
     </div>
+
+<!-- Subscribe col on the fron page -->
+<!-- <div class="row">
+    <div class="hero half-and-half tall align-items-end align-items-md-center justify-content-md-end" style="background-color: #000000;">
+         New arrivals pictures
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+                <img class="hero-media hero-media-desktop width-1-3" src="/media/pexels-jeffrey-brandjes-6835492.jpg" alt="#">
+            </div>
+           Subscrition text
+            <div class="hero-text width-1-3 mobile-width-1 text-left dark-theme dark-theme-mobile semitransparent">
+                <div class="hero-body pb-2">
+                    <h4 class="display-4 logo-font text-black">
+                        Check out our blog and get more inspiration about where your next slope will be!
+                    </h4>
+                </div>
+            </div>
+    </div>
+</div>   -->
 {% endblock %}
