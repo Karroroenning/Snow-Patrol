@@ -1,23 +1,30 @@
-{% extends "account/base.html" %}
-
+{% extends "base.html" %}
 {% load i18n %}
 
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
-{% block inner_content %}
-<hr>
-<h2 class="logo-font mb-4">{% trans "Sign Out" %}</h2>
-<hr>
-<p>{% trans 'Are you sure you want to sign out?' %}</p>
+{% block content %}
 
-<form method="post" action="{% url 'account_logout' %}">
-  {% csrf_token %}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-  {% endif %}
-  <a class="btn btn-outline-black rounded-0" href="{% url 'home' %}">Cancel</a>
-  <button type="submit">{% trans 'Sign Out' %}</button>
-</form>
+<section class="account-body">
+  <div class="container p-3">
+      <div id="log" class="row py-3 mt-0">
+          <div class="col-12 col-sm-10 col-md-6 col-lg-4 mx-auto">
+              <div class="card shadow mt-4">
+                  <div class="card-body ">
+                      <h1 class="h5 card-title text-center text-decoration-underline">LOGOUT</h1>
 
+                      <form method="POST" action="{% url 'account_logout' %}">
+                          {% csrf_token %} {% if redirect_field_value %}
+                          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                          {% endif %}
+                          <p>Are you sure you want to logout?</p>
+                          <button class="btn btn-secondary hero-button-1 hero-buttons" style="animation-delay: 300.0ms;" type="submit">LOGOUT</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
 
 {% endblock %}

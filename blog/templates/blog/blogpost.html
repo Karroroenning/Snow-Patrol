@@ -6,30 +6,18 @@
     <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
 {% endblock %}
 
-
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
-{% endblock %}
-
-
 <section>
     <div class="container-fluid px-4 px-lg-5">
         <h2 class="mb-4 mt-3 text-center top-text">
-            Blog
+            BLOG
         </h2>
         <hr>
     </div>
 </section>
 
-
 <div class="container-fluid">
     <div class="row">
-
-        <!-- Recipes Entries Column -->
+        <!-- Blogpost Entries Column -->
         <div class="row">
             <div class="col-12 mt-3 left">
                 {% for blogpost in blogpost_list %}
