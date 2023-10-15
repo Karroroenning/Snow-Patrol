@@ -19,8 +19,9 @@ body {
     width: 1.5rem;
 }
 
-hr {
+hr{
     margin: 0;
+    border-top: 1px solid rgb(223, 223, 223);
 }
 
 .main-logo-link {
@@ -213,78 +214,8 @@ input[name='q']::placeholder {
 
 /* Footer */
 
-#footer {
-    background-color: var(--overlay-black);
-    width: 100%;
-    padding: 20px 20px 10px 20px;
-    color: var(--text-grey);
-}
-
-#footer .logo {
-    font-size: 1.1rem;
-}
-
-#footer .sub-title {
-    margin-top: 20px;
-    text-align: left;
-}
-
-#footer ul li {
-    margin-bottom: 15px;
-    margin-left: -39px;
-}
-
-#footer ul li a {
-    margin-bottom: 15px;
-}
-
-#footer ul li,
-#footer ul li a,
-#footer p {
-    color: var(--light-grey);
-}
-
-#footer i {
-    margin-right: 8px;
-}
-
-#footer .credid-cards-box {
-    margin-top: 25px;
-}
-
-#footer .credid-cards-box img {
-    width: 50px;
-    height: auto;
-}
-
-#footer .trust-company {
-    width: 200px;
-    position: relative;
-    margin-top: -200px;
-}
-
-.trust-company-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-.trust-company-top {
-    display: none;
-    width: 150px !important;
-    margin: 0 auto;
-}
-
-#footer .copyright {
-    padding: 5px;
-    font-size: clamp(0.7rem, 2.5vw, 0.9rem);
+.sub-title {
+    font-size: 17px;
 }
 
 /* -------------------------------- Media Queries */
@@ -296,6 +227,14 @@ input[name='q']::placeholder {
     }
   }
 
+  @media (max-width: 990px) {
+
+/* footer */
+.contact-box{
+    margin-top: 1rem;
+}
+
+  }
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
