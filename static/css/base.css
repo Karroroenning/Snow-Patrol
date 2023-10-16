@@ -218,6 +218,13 @@ input[name='q']::placeholder {
     font-size: 17px;
 }
 
+#mc_embed_signup {
+    background:#fff; 
+    clear:left; 
+    font:14px Helvetica,Arial,sans-serif; 
+    width: 600px;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
