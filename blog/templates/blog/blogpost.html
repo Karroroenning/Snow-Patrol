@@ -1,58 +1,46 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block content %}
 
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
 {% endblock %}
-
-<section>
+{% block content %}
+<div>
     <div class="container-fluid px-4 px-lg-5">
         <h2 class="mb-4 mt-3 text-center top-text">
             BLOG
         </h2>
         <hr>
     </div>
-</section>
+</div>
 
-<div class="container-fluid">
-    <div class="row">
-        <!-- Blogpost Entries Column -->
-        <div class="row">
-            <div class="col-12 mt-3 left">
-                {% for blogpost in blogpost_list %}
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <div class="image-container">
-                                {% if "placeholder" in blogpost.featured_image.url %}
-                                    <img class="card-img-top img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.blogpost.title }}">
-                                    <!-- Display the post image or a placeholder image -->
-                                    {% else %}
-                                    <img class="card-img-top img-fluid rounded" src=" {{ blogpost.image.url }}" alt="{{ item.blogpost.title }}">
-                                </div>
-                                {% endif %}
-                                <div class="image-flash">
-                                    <p class="author">Creator: {{ blogpost.author }}</p>
-                                </div>
-                            </div>
-                            <a href="{% url 'blogpost_detail' blogpost.slug %}" class="blogpost-link">
-                                <h4 class="card-title">{{ blogpost.title }}</h4>
-                                <p class="card-text">{{ blogpost.creator }}</p>
-                            </a>
-                            <hr>
-                        </div>
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <!--Blog Entries-->
+            {% for blogpost in blogpost_list %}
+            <div class="col-xs-12 col-md-4">
+                <div class="card grow shadow">
+                    <a href="{% url 'blogpost_detail' blogpost.slug %}">
+                    {% if "placeholder" in blogpost.featured_image.url %}
+                        <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.blogpost.title }}" style="height: 300px;">
+                    </a>
+                    {% else %}
+                        <img class="card-img-top" src=" {{ blogpost.image.url }}" alt="{{ item.blogpost.title }}" style="height: 300px;">
+                    {% endif %}
+                    <div class="card-body">
+                        <a href="{% url 'blogpost_detail' blogpost.slug %}">
+                            <h5 class="card-title">{{ blogpost.title }}</h5>
+                        </a>
+                        <p class="card-text"><small class="text-muted">{{blogpost.created_on }}</small></p>
+                        <p class="card-text"><small class="text-muted">Creator: {{ blogpost.author }}</small></p>
                     </div>
                 </div>
-                {% if forloop.counter|divisibleby:3 %}
-            </div>                      
-            <div class="row">
-                {% endif %}
-                {% endfor %}
+  
             </div>
+            {% endfor %}
         </div>
-    </div>
-<!-- When it's more then 9 post on page a next button will appear -->
+    <!-- Pagination -->
+  <!-- When it's more then 9 post on page a next button will appear -->
 {% if is_paginated %}
     <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">
@@ -67,5 +55,7 @@
     </nav>
     {% endif %}
 </div>
+
+
 {% endblock content %}
 

@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
+from django.views.generic import ListView
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -12,7 +13,7 @@ class BlogList(generic.ListView):
     model = BlogPost
     queryset = BlogPost.objects.filter(status=1).order_by('-created_on')
     template_name = 'blog/blogpost.html'
-    paginate_by = 9
+    paginate_by = 6
 
 
 class BlogDetail(View):
