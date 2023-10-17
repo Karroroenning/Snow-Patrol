@@ -116,6 +116,7 @@ hr{
     background-color: #000000;
 }
 
+
 /* Hover over the category */
 a.category-badge > span.badge:hover {
     background: #212529 !important;
@@ -221,9 +222,11 @@ input[name='q']::placeholder {
 #mc_embed_signup {
     background:#fff; 
     clear:left; 
-    font:14px Helvetica,Arial,sans-serif; 
-    width: 20em;
+    font-size:15px; 
+    font-weight: normal;
+    margin: 10px;
 }
+
 
 /* -------------------------------- Media Queries */
 
