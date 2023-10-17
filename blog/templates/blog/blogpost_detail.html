@@ -23,14 +23,14 @@
     <div class="container">
         <div class="row g-0">
             <div class="col-md-6 masthead-text">
-                <p class="post-subtitle">{{ blogpost.author }} | {{ blogpost.created_on }}</p>
+                <p class="post-subtitle">{{ blogpost.created_on }}</p>
                 <div class="card-body">
                     <div class="card-text-blog">
                         {{ blogpost.content | safe }}
                     </div>
                 </div>
             </div>
-            <div class="d-none d-md-block col-md-6 masthead-image">
+            <div class="d-none d-md-block col-md-6 masthead-image img-blog-detail">
                 <!-- The placeholder image -->
                 {% if "placeholder" in blogpost.featured_image.url %}
                     <img class="card-img-top img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.blogpost.title }}">
@@ -44,6 +44,5 @@
     </div>
 </div>
 </div>
-<hr class="hr_detail">
 
 {% endblock content %}
