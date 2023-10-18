@@ -1,12 +1,17 @@
 {% extends "base.html" %}
 {% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'home/css/home.css' %}">
+{% endblock %}
+
 {% block content %}
 
 <div class="masthead">
     <div class="container">
         <div class="row g-0">
             <div class="d-none d-md-block col-md-6 masthead-image">
-                <img class="card-img-top img-fluid rounded hero-img" src="/media/pexels-jeffrey-brandjes-6835492.jpg" alt=""> 
+                <img class="card-img-top img-fluid rounded hero-img" src="/media/pexels-jeffrey-brandjes-6835492.jpg" alt="A snowboarder riding up a rail among tall snow-capped mountains."> 
              </div>
             <div class="col-md-6 masthead-text">
                 <div class="card-body">
