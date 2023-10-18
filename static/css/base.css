@@ -221,6 +221,11 @@ input[name='q']::placeholder {
     margin: 10px;
 }
 
+.social-btn i:hover {
+    background-color: #000;
+    color: #787878;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -387,3 +392,4 @@ input[name='q']::placeholder {
         padding: .25rem .5rem !important;
     }
 }
+
