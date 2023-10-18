@@ -19,7 +19,7 @@ body {
     width: 1.5rem;
 }
 
-hr{
+hr {
     margin: 0;
     border-top: 1px solid rgb(223, 223, 223);
 }
@@ -77,6 +77,17 @@ hr{
 
 .bg-black {
     background: #000 !important;
+}
+
+/* Login and logout button */
+.hero-button-1 {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.hero-button-1:hover {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .overlay {
@@ -192,6 +203,16 @@ input[name='q']::placeholder {
     font-size: 17px;
 }
 
+.sub-button {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.sub-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
 #mc_embed_signup {
     background:#fff; 
     clear:left; 
@@ -199,7 +220,6 @@ input[name='q']::placeholder {
     font-weight: normal;
     margin: 10px;
 }
-
 
 /* -------------------------------- Media Queries */
 
