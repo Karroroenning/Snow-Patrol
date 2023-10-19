@@ -352,6 +352,15 @@ input[name='q']::placeholder {
 
     .nav-link {
         padding: 0.15rem;
+        font-size: 10px;
+    }
+
+    .mobile-nav {
+        padding-left: 5px;
+    }
+
+    .dropdown-item {
+        font-size: 10px;
     }
 
     /* fontawesome icons */
