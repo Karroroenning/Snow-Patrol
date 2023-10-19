@@ -145,12 +145,10 @@ Font: Lato
 ### Homepage
 
 
-### Add Recipes
-
-### Recipes Sites
+### Product page
 
 
-### Recipes detail
+### Product detail
 
 
 ### Edit Recipes
@@ -159,7 +157,7 @@ Font: Lato
 ### Delete Recipes
 
 
-### Contact Page
+### Footer
 
 
 ### Sign-in
