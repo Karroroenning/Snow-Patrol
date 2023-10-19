@@ -151,10 +151,28 @@ Font: Lato
 ### Product detail
 
 
-### Edit Recipes
+### Review
 
 
-### Delete Recipes
+### Bloglist
+
+
+### Blogpost
+
+
+### Wishlist
+
+
+### Shopping Bag
+
+
+### Checkout
+
+
+### Checkout success
+
+
+### My profile
 
 
 ### Footer
@@ -247,148 +265,346 @@ I have manually tested every link on the homepage to ensure that it redirects to
 
 ## Validator Testing
 #### HTML files pass through the W3C validator with no issues found.
-<details><summary>- Add recipes</summary>
-<img src="documentation/html-validations/html_validator_add_recipes.png" >
+<details><summary>- Bag Total</summary>
+<img src="" >
 </details>
 
-<details><summary>- Contact Us</summary>
-<img src="documentation/html-validations/html_validator_contact.png" >
+<details><summary>- Bag</summary>
+<img src="" >
 </details>
 
-<details><summary>- Edit</summary>
-<img src="documentation/html-validations/html_validator_edit.png" >
+<details><summary>- Checkout Buttons</summary>
+<img src="" >
 </details>
 
-<details><summary>- Home</summary>
-<img src="documentation/html-validations/html_validator_home.png" >
+<details><summary>- Product image</summary>
+<img src="" >
 </details>
 
-<details><summary>- Login</summary>
-<img src="documentation/html-validations/html_validator_login.png" >
+<details><summary>- Product info</summary>
+<img src="" >
 </details>
 
-<details><summary>- Logout</summary>
-<img src="documentation/html-validations/html_validator_logout.png" >
+<details><summary>- Quantity form</summary>
+<img src="" >
 </details>
 
-<details><summary>- Recipes</summary>
-<img src="documentation/html-validations/html_validator_recipes.png" >
+<details><summary>- Blogpost detail</summary>
+<img src="" >
 </details>
 
-<details><summary>- Recipes detail</summary>
-<img src="documentation/html-validations/html_validator_recipes_detail.png" >
+<details><summary>- Blogpost</summary>
+<img src="" >
 </details>
 
-<details><summary>- Register</summary>
-<img src="documentation/html-validations/html_validator_register.png" >
+<details><summary>- Checkout Success</summary>
+<img src="" >
+</details>
+
+<details><summary>- Checkout</summary>
+<img src="" >
+</details>
+
+<details><summary>- Index</summary>
+<img src="" >
+</details>
+
+<details><summary>- Add product</summary>
+<img src="" >
+</details>
+
+<details><summary>- Edit product</summary>
+<img src="" >
+</details>
+
+<details><summary>- Product detail</summary>
+<img src="" >
+</details>
+
+<details><summary>- Products</summary>
+<img src="" >
+</details>
+
+<details><summary>- Profile</summary>
+<img src="" >
+</details>
+
+<details><summary>- Base</summary>
+<img src="" >
+</details>
+
+<details><summary>- Footer</summary>
+<img src="" >
+</details>
+
+<details><summary>- Main nav</summary>
+<img src="" >
+</details>
+
+<details><summary>- Mobile top header</summary>
+<img src="" >
 </details>
 
 #### CSS files pass through the Jigsaw validator with no issues found.
-<details><summary>- CSS</summary>
-<img src="documentation/css-validator/css_validator.png" >
+<details><summary>- base.css</summary>
+<img src="" >
 </details>
 
+<details><summary>- blog.css</summary>
+<img src="" >
+</details>
+
+<details><summary>- checkout.css</summary>
+<img src="" >
+</details>
+
+<details><summary>- home.css</summary>
+<img src="" >
+</details>
+
+<details><summary>- profile.css</summary>
+<img src="" >
+</details>
+
+
 #### Python files have been through the validator and have no issues.
-<details><summary>- contact_admin</summary>
-<img src="documentation/python-validator/contact_admin.png" >
+<details><summary>- Bag context.py</summary>
+<img src="" >
 </details>
-<details><summary>- contact_admin</summary>
-<img src="documentation/python-validator/contact_apps.png" >
+<details><summary>- Bag views.py</summary>
+<img src="" >
 </details>
-<details><summary>- contact_forms</summary>
-<img src="documentation/python-validator/contact_forms.png" >
+<details><summary>- Blog admin.py</summary>
+<img src="" >
 </details>
-<details><summary>- contact_models</summary>
-<img src="documentation/python-validator/contact_models.png" >
+<details><summary>- Blog forms.py</summary>
+<img src="" >
 </details>
-<details><summary>- contact_urls</summary>
-<img src="documentation/python-validator/contact_urls.png" >
+<details><summary>- Blog models.py</summary>
+<img src="" >
 </details>
-<details><summary>- contact_views</summary>
-<img src="documentation/python-validator/contact_views.png" >
+<details><summary>- Blog urls.py</summary>
+<img src="" >
 </details>
-<details><summary>- home_apps</summary>
-<img src="documentation/python-validator/home_apps.png" >
+<details><summary>- Blog views.py</summary>
+<img src="" >
 </details>
-<details><summary>- home_urls</summary>
-<img src="documentation/python-validator/home_urls.png" >
+<details><summary>- Blog .py</summary>
+<img src="" >
 </details>
-<details><summary>- home_views</summary>
-<img src="documentation/python-validator/home_views.png" >
+<details><summary>- checkout admin.py</summary>
+<img src="" >
 </details>
-<details><summary>- nonalco4me_urls</summary>
-<img src="documentation/python-validator/nonalco4me_urls.png" >
+<details><summary>- checkout forms.py</summary>
+<img src="" >
 </details>
-<details><summary>- nonalco4me_wsg</summary>
-<img src="documentation/python-validator/nonalco4me_wsgi.png" >
+<details><summary>- checkout models.py</summary>
+<img src="" >
 </details>
-<details><summary>- nonalco4me_wsgi</summary>
-<img src="documentation/python-validator/recipes_admin.png" >
+<details><summary>- checkout signals.py</summary>
+<img src="" >
 </details>
-<details><summary>- recipes_forms</summary>
-<img src="documentation/python-validator/recipes_forms.png" >
+<details><summary>- checkout urls.py</summary>
+<img src="" >
 </details>
-<details><summary>- recipes_models</summary>
-<img src="documentation/python-validator/recipes_models.png" >
+<details><summary>- checkout views.py</summary>
+<img src="" >
 </details>
-<details><summary>- recipes_urls</summary>
-<img src="documentation/python-validator/recipes_urls.png" >
+<details><summary>- checkout webhook_handler.py</summary>
+<img src="" >
 </details>
-<details><summary>- recipes_views</summary>
-<img src="documentation/python-validator/recipes_views.png" >
+<details><summary>- checkout webhooks.py</summary>
+<img src="" >
+</details>
+<details><summary>- home urls.py</summary>
+<img src="" >
+</details>
+<details><summary>- home views.py</summary>
+<img src="" >
+</details>
+<details><summary>- products admin.py</summary>
+<img src="" >
+</details>
+<details><summary>- products forms.py</summary>
+<img src="" >
+</details>
+<details><summary>- products models.py</summary>
+<img src="" >
+</details>
+<details><summary>- products urls.py</summary>
+<img src="" >
+</details>
+<details><summary>- products views.py</summary>
+<img src="" >
+</details>
+<details><summary>- products widgets.py</summary>
+<img src="" >
+</details>
+<details><summary>- profiles forms.py</summary>
+<img src="" >
+</details>
+<details><summary>- profiles models.py</summary>
+<img src="" >
+</details>
+<details><summary>- profiles urls.py</summary>
+<img src="" >
+</details>
+<details><summary>- profiles views.py</summary>
+<img src="" >
+</details>
+<details><summary>- wishlist admin.py</summary>
+<img src="" >
+</details>
+<details><summary>- wishlist models.py</summary>
+<img src="" >
+</details>
+<details><summary>- wishlist urls.py</summary>
+<img src="" >
+</details>
+<details><summary>- wishlist views.py</summary>
+<img src="" >
 </details>
 
 #### Javascript file have been through the validator and it takes no arguments.
 The function works without problems and I see that I have undefined variable and unused variables. I tried to fix a google maps from Code institute lessons. But did not go through JsHint. So the code I have now is from Google's own tutorial. Tried to fix the code so I didn't need what is circled in the picture, but unfortunately didn't succeed.
-<details><summary>- maps.js</summary>
-<img src="documentation/javascript-validator/jshint.png" >
+<details><summary>- checkout stripe_elements.js</summary>
+<img src="" >
+</details>
+<details><summary>- profiles countryfield.js</summary>
+<img src="" >
 </details>
 
 ## Defensive Validation
 
 <details><summary>- When I am not logged in and try to access a page in logged in mode.</summary>
-<img src="documentation/testing/login_Page.png" >
+<img src="" >
 </details>
 
 If a non-logged-in guest tries to access the add recipes, edit page, delete page, and contact page, they are prompted to log in. If at login they are identified as a logged in user, they are taken to the pages. Otherwise they are taken to the page screenshot above.
 
 ## Accessibility
 
-<details><summary>- Lighthouse</summary>
-<img src="documentation/lighthouse/lighthouse.png" >
+## Lighthouse
+
+For the performance, accessibility, best practices, and SEO of the site for mobile and desktop I used the Chrome Lighthouse tool:
+
+#### Desktop Results
+
+
+<details><summary>- Index Page</summary>
+<img src="" >
+</details>
+<details><summary>- Shopping Bag</summary>
+<img src="" >
+</details>
+<details><summary>- Products</summary>
+<img src="" >
+</details>
+<details><summary>- Product detail</summary>
+<img src="" >
+</details>
+<details><summary>- Blogpost</summary>
+<img src="" >
+</details>
+<details><summary>- Blogpost detail</summary>
+<img src="" >
+</details>
+<details><summary>- Checkout</summary>
+<img src="" >
+</details>
+<details><summary>- Checkout Success</summary>
+<img src="" >
+</details>
+<details><summary>- Add product</summary>
+<img src="" >
+</details>
+<details><summary>- Profile</summary>
+<img src="" >
+</details>
+<details><summary>- Wishlist</summary>
+<img src="" >
 </details>
 
+
+- Desktop performed well on all major pages of the site.
+- The 83-point score for Best Practices is due to the scripts beyond my control (e.g. Mailchimp)
+
+#### Mobile Results
+
+<details><summary>- Index Page</summary>
+<img src="" >
+</details>
+<details><summary>- Shopping Bag</summary>
+<img src="" >
+</details>
+<details><summary>- Products</summary>
+<img src="" >
+</details>
+<details><summary>- Product detail</summary>
+<img src="" >
+</details>
+<details><summary>- Blogpost</summary>
+<img src="" >
+</details>
+<details><summary>- Blogpost detail</summary>
+<img src="" >
+</details>
+<details><summary>- Checkout</summary>
+<img src="" >
+</details>
+<details><summary>- Checkout Success</summary>
+<img src="" >
+</details>
+<details><summary>- Add product</summary>
+<img src="" >
+</details>
+<details><summary>- Profile</summary>
+<img src="" >
+</details>
+<details><summary>- Wishlist</summary>
+<img src="" >
+</details>
+
+
+- Mobile performed well on all major pages of the site.
+- The 83-point score for Best Practices is due to the scripts beyond my control (e.g. Mailchimp)
+
+
 ## Fixed bugs
-- When I was clicking on a recipe to see details, I got an error that my recipes_detail.html does not exist. 
+
+#### Bug 1
+- 
 - - <details><summary>I was missing the L in HTML.</summary>
-    <img src="documentation/bugs/missing_html.png" >
+    <img src="" >
     </details>
 <br>
 
-- I was trying to fix my comments. But when I was running a makemigration, I got (You are trying to add a non-nullable field 'email') I got different all the time. I also tried received 'name'. I couldn't have fixed it without Joshua's help on tutor support. Because I needed to restore my database.
+#### Bug 2
 
-- I had a url path that didn't work when I pressed the add recipes button. So I got an error message. But it turned out that I had placed my url paths in the wrong order.
-- - <details><summary>- The button that didn't work.</summary>
-    <img src="documentation/bugs/the_button.png" >
+- 
+- 
+- - <details><summary>- </summary>
+    <img src="" >
     </details>
-- - <details><summary>- Url path when it didn't work.</summary>
-    <img src="documentation/bugs/my_url.png" >
+- - <details><summary>- </summary>
+    <img src="" >
     </details>
-- - <details><summary>- The Url path after, then the button worked.</summary>
-    <img src="documentation/bugs/tutor_urls.png" >
+- - <details><summary>- </summary>
+    <img src="" >
     </details>
 <br>
 
-- In my recipe detail, I wanted an edit and delete buttons. But I never got the buttons to appear. But that was because I had creator in my html file and author in my models.py.
-- - <details><summary>- The button that didn't work.</summary>
-    <img src="documentation/bugs/edit_button.png" >
+#### Bug 3
+
+- 
+- - <details><summary>- </summary>
+    <img src="" >
     </details>
-- - <details><summary>- Url path when it didn't work.</summary>
-    <img src="documentation/bugs/edit_button_creator.png" >
+- - <details><summary>- </summary>
+    <img src="" >
     </details>
 <br>
 
-- I didn't get my google maps to show up after I deployed to heroku. But my very kind classmate Starhigh helped me solve the problem. I would just add the secret key as a variable in configvars.
 
 ## Technologies Used
 ### Main Languages Used
@@ -411,7 +627,7 @@ If a non-logged-in guest tries to access the add recipes, edit page, delete page
 
 ### Modules used for the development of this project:
 <details><summary>- Requirements.</summary>
-    <img src="documentation/images/requirements.png" >
+    <img src="" >
     </details>
 
 ## Deployment
@@ -420,7 +636,7 @@ If a non-logged-in guest tries to access the add recipes, edit page, delete page
 
 1. To generate a managed PostgreSQL database, please proceed to [ElephantSQL](https://customer.elephantsql.com/) and either sign up or sign in to your account. Once you've logged in, click on the 'Create New Instance' button.
 - - <details><summary>See Image</summary>
-    <img src="documentation/deployment/elephantSQL.png" >
+    <img src="" >
     </details>
 
 2. Name your database and select the 'Tiny Turtle' payment plan. Then, click on 'Select Region'
@@ -430,7 +646,7 @@ If a non-logged-in guest tries to access the add recipes, edit page, delete page
 4.  After creating the instance, navigate to the instances page and click on the name of the database you selected earlier. Then, in the details section on the following page, copy the PostgreSQL URL.
 
 - - <details><summary>See Image</summary>
-    <img src="documentation/deployment/elephantSQL_url.png" >
+    <img src="" >
     </details>
 
 ### Deploying the website in Heroko
@@ -439,17 +655,17 @@ If a non-logged-in guest tries to access the add recipes, edit page, delete page
 
 1. env.py : stores confidential data eg. API keys, passwords etc.
 - - <details><summary>See Image</summary>
-    <img src="documentation/deployment/env.py.png" >
+    <img src="" >
     </details>
 
 2. Procfile : Very important for deployment and must be added with capital P
 - - <details><summary>See Image</summary>
-    <img src="documentation/deployment/procfile.png" >
+    <img src="" >
     </details>
 
 3. Requirements.txt: This must be updated for deployment in Heroku. It stores data of libraries used for project
 - - <details><summary>See Image</summary>
-    <img src="documentation/deployment/requirements.png" >
+    <img src="" >
     </details>
 
 - The website was deployed to Heroko using following steps:
@@ -533,19 +749,7 @@ The live link for "NonAlco4Me" can be found [HERE](https://non-alco-4me-427be0bd
 ## Credits
 
 ### Content
-- I have received very good help from Think Therefore I Blog from code institute which got me started on my project.
-- Checked out [Django Blog Webinar](https://youtu.be/YH--VobIA8c) which helped me understand more about edit and delete buttons.
-- Big shoutout to my classmate [Starhigh](https://github.com/gStarhigh) who sat for 4 hours trying to help me get my commenting feature up and running. Unfortunately I needed to restore my database. Which we didn't think of.
-- A thank you to Joshua from tutor support who helped me reset my database. When I couldn't makemigrate.
-- Code Institute (especially the Django blog) which helped me to understand how it all comes together.
-- Rebecca from tutor support helped me to understand my urls path and why it didn't worked.
-- Thanks to my mentor Martina for taking the time and giving me good inputs about my project. And sent very good suggestions for different repos that I could get inspiration from.
-- I struggled a lot with my google maps, but couldn't get it to work the way I wanted. So I searched on google and found a great youtube video that helped me. [How to add a map to your website with JavaScript](https://www.youtube.com/watch?v=B4p3A00uXAs&t=53s)
-- Have looked at [The paper lounge](https://github.com/cornishcoder1/the_paper_lounge) functions and received a lot of inspiration and a lot of understanding of how everything is connected.
-- I had a hard time getting started with my readme. So I've looked at three fantastic readme's that I've copied a bit from.
-- - [Humanitas](https://github.com/Sinha5714/humanitas_django_pp4/blob/main/README.md)
-- - [Hillbox](https://github.com/736B796E6574/CI-PP4/blob/main/README.md)
-- - [The paper lounge](https://github.com/cornishcoder1/the_paper_lounge/blob/main/README.md)
+
 
 ## Images
 
