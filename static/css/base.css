@@ -197,6 +197,34 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+/* home page */
+
+.masthead {
+    background-color: #000;
+}
+
+.hero-img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.card-text {
+    color: #f8f9fa;
+    margin-top: 6rem;
+    font-size: 30px;
+}
+
+.hero-button-1 {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.hero-button-1:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
 /* Footer */
 
 .sub-title {

@@ -16,7 +16,7 @@
                             {% csrf_token %} {{ form|crispy }} {% if redirect_field_value %}
                             <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                             {% endif %}
-                            <button class="btn btn-secondary hero-button-1 hero-buttons" style="animation-delay: 300.0ms;" type="submit">LOGIN</button>
+                            <button class="btn btn-secondary sub-button hero-buttons" style="animation-delay: 300.0ms;" type="submit">LOGIN</button>
                         </form>
                     </div>
                 </div>
