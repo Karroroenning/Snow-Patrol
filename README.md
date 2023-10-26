@@ -3,6 +3,9 @@
 
 ![Am I Responsive image]()
 
+Snowpatrol is a fictional B2C e-commerce store that is designed and implemented with Python and Django, HTML, CSS and some Javascript. 
+ However it has to be noted that this site is for educational use only
+
 Please view the live website here: [Snowpatrol](https://snowpatrol-6b2d334410bf.herokuapp.com/ "Snowpatrole Homepage").
 
 ## Table of contents
