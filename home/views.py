@@ -1,7 +1,4 @@
-from django.shortcuts import render, redirect
-from django.core.validators import validate_email
-from django.core.exceptions import ValidationError
-from django.contrib.auth import get_user_model
+from django.shortcuts import render
 
 
 def index(request):

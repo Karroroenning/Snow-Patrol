@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['8000-karroroennin-snowpatrol-9s084sgh059.ws-eu105.gitpod.io', 'snowpatrol-6b2d334410bf.herokuapp.com', "localhost"]
+ALLOWED_HOSTS = ['8000-karroroennin-snowpatrol-9s084sgh059.ws-eu105.gitpod.io', 'snowpatrol-6b2d334410bf.herokuapp.com', "localhost"]  # noqa E501
 
 
 # Application definition
@@ -122,7 +122,6 @@ LOGIN_REDIRECT_URL = '/'
 WSGI_APPLICATION = 'snowpatrol.wsgi.application'
 
 
-
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
@@ -147,16 +146,16 @@ else:
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',    # noqa E501
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',    # noqa E501
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',    # noqa E501
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',    # noqa E501
     },
 ]
 

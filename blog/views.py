@@ -1,9 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.views.generic import ListView
-from django.http import HttpResponse, HttpResponseRedirect
-from django.contrib import messages
-from django.contrib.auth.decorators import login_required
+from django.http import HttpResponseRedirect
 
 from .models import BlogPost
 from .forms import BlogPostForm
