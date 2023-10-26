@@ -7,7 +7,7 @@ from .models import BlogPost
 class BlogPostAdmin(SummernoteModelAdmin):
 
     list_display = ('title', 'slug', 'created_on')
-    search_fields = ['title', 'body']
+    search_fields = ['title', 'content']
     prepopulated_fields = {'slug': ('title',)}
     list_filter = ('created_on',)
-    summernote_fields = ('body')
+    summernote_fields = ('content')
