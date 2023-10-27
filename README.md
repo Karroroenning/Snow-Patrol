@@ -4,9 +4,11 @@
 ![Am I Responsive image]()
 
 Snowpatrol is a fictional B2C e-commerce store that is designed and implemented with Python and Django, HTML, CSS and some Javascript. 
- However it has to be noted that this site is for educational use only
+However it has to be noted that this site is for educational use only.
 
 Please view the live website here: [Snowpatrol](https://snowpatrol-6b2d334410bf.herokuapp.com/ "Snowpatrole Homepage").
+<br>
+My Repository can you see here: [Repository](https://github.com/Karroroenning/Snow-Patrol "Repository").
 
 ## Table of contents
 + [UX](#ux)
@@ -49,10 +51,18 @@ Please view the live website here: [Snowpatrol](https://snowpatrol-6b2d334410bf.
 
 ## UX
 ### Site Purpose
-
+The purpose of the website is to be able to give users an opportunity to explore what is available to use within the world of snowboarding. Whether you are a beginner or a professional, there is always an option that suits them. Even when you have bought what you need, there is always a reason to visit the website again, because there is a blog that the admin updates a few times a week to update users about all the upcoming news, various tips on good slopes and even tips on how to think about how to wax the board for next season.
 
 ### Site Goal
-
+- An easy to navigate website with clear purpose.
+- Provide users with products that meet their expectations.
+- To provide tools that allow users to search for products.
+- Allow users to view and read about the products that may help or interest them.
+- Allow users to give their review on any product.
+- Allow users to add products to a wishlist of theirs.
+- To give users news or tips about what's happening in snowboarding.
+- Allow users to checkout quickly and easily.
+- To allow users to create a profile to view past orders and update profile information.
 
 ### Future Goals
 
@@ -62,9 +72,39 @@ Please view the live website here: [Snowpatrol](https://snowpatrol-6b2d334410bf.
 
 ### As a site user: 
 
+- Navigate around the site in a smooth and simple way. (must do)
+- See a list of products and can choose the product you want. (must do)
+- Search products to find a specific product. (must do)
+- Click on a product to read and view the details. (must do)
+- Register for an account to avail of the services offered to members. (must do)
+- View product reviews so that I can read other users opinions. (Could do)
+- Buy a product by using the website checkout system. (must do)
+- I can sort products on criteria such as price and category so that I can have a method of ordering the products as I prefer. (Could do)
+- I can view the contents of my shopping basket so that I can be able to make any adjustments. (must do)
+- Sign up to newsletter so that I can keep updated on the latest news. (must do)
+- User Signup Email Confirmation. (must do)
+- Cart is displayed on the top right navigation panel, so that users can avoid spending too much. (must do)
+- Read about the latest news. (Could do)
+
 ### As a login user:
 
+- Delete my previous review. (Could do)
+- Leave a review about a product. (Could do)
+- Edit my previous reviews. (Could do)
+- Save my data under my personal profile. (must do)
+- I can view my order history. (must do)
+- Manage my profile by updating my details. (must do)
+- Logout of the website. (must do)
+- Add products to my wish list (Could do)
+
 ### As a Admin:
+
+- Create and publish a new product. (must do)
+- Create a draft of a new product so it can be finalised later. (Could do)
+- Create a new user, products, and categories. (must do)
+- Delete user, products, categories and reviews. (must do)
+- Approve user's reviews. (Could do)
+- Create and publish a new blogpost from adminpanel. (Could do)
 
 
 ## Agile Methodology
@@ -117,7 +157,7 @@ The development of this project was managed and implemented using GitHub Project
 ### Color Scheme
 <img src="" >
 
-I want the colors to give a calming and modern feeling. I have chosen to have a light background so that there will be a good contrast between the important thing that should be seen the most and the background. It must not flow together because it can be perceived as disturbing to the eye. 
+I have kept the colors very simple. Black and white. Because there are already a lot of other colors from all the product images and blog post images. The fact that the basic colors are black and white means that the focus is more on the products. This is an e-commerce website and our goal is for the focus to fall on our goal, the products!
 
 ### Typography:
 
@@ -127,7 +167,8 @@ Font: Lato
 
 ### Imagery:
 
-- For the first page, I want an image that shows what the page has to offer. 
+- On the first page, I have a picture that I think is a good picture for a first impression that snowboarding is more than just going down a slope. It can also be sporty and peaceful in a beautiful nature.
+
 <details><summary>Hero Image</summary>
 <img src="" >
 </details>
@@ -135,18 +176,52 @@ Font: Lato
 <br>
 
 
-- For the placeholder image
-<details><summary>Placeholder image</summary>
+- Up in the left corner, we have our own designed logo. The logo should resemble a mountain and a bar-code. The mountain should symbolize slope and the bar-code is that it is an e-commerce website.
+<details><summary>Logo</summary>
 <img src="" >
 </details>
 
 <br>
-- All other images
+- All other images are of the products and blog post images that the admin can add from the admin panel.
 
 
 ## Features
-### Homepage
 
+### Navbar and Footer
+- A navbar with nav-items to navigate to various pages in the website.
+- The logo at the top left which also takes us to the first page.
+- The search box where you can search for a product you are looking for.
+- My account button that takes one to their profile page, wishlist and log out.
+- On the right we have our shopping cart so you can clearly see how much you spend.
+- Footer with social media, adress, contact and subscribe.
+<details><summary>Navbar</summary>
+<img src="documentation/features/Navbar_footer/Navbar.png">
+</details>
+<details><summary>Footer</summary>
+<img src="documentation/features/Navbar_footer/footer.png">
+</details>
+
+### Homepage
+- We have the hero image with a short text about our blog and a button that will take us to the blogposts.
+<details><summary>Hero Image</summary>
+<img src="documentation/features/Home/hero_img_blog.png">
+</details>
+
+### Bloglist
+- Blogposts lined up. 3 posts per row. 9 posts per side.
+- Below the blog post images we have a title for the blog post and the date it was created.
+- You can click on either the image or the title to get to the blog post page.
+<details><summary>Bloglist</summary>
+<img src="documentation/features/blog/bloglist.png">
+</details>
+
+### Blogpost
+- Under the navbar, we have the title of the blogpost and when it was created. 
+- Picture of the blogpost is to the right of the text.
+- To the left of the picture we have the content about the blog post.
+<details><summary>Bloglist</summary>
+<img src="documentation/features/blog/blogpost.png">
+</details>
 
 ### Product page
 
@@ -155,12 +230,6 @@ Font: Lato
 
 
 ### Review
-
-
-### Bloglist
-
-
-### Blogpost
 
 
 ### Wishlist
