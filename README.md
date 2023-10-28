@@ -278,23 +278,72 @@ Font: Lato
 ### Checkout success
 - On this page we have our order information.
 - We also have a button that takes us to the blog page.
+- After paying, the user also receives a confirmation email.
 <details><summary>Checkout success</summary>
 <img src="documentation/features/checkout/checkout_success.png">
 </details>
+<details><summary>Confirmation Email</summary>
+<img src="documentation/features/checkout/email.png">
+</details>
 
 ### My profile
+- You have your own profile page if you are logged in.
+- On the left side we have the user's delivery information which can be updated by pressing the button update information.
+- On the right side we have the user's order history. The order number, date the order was placed, items and order total are displayed there.
+- If you want to get more information about the order, you can click on the order number, which is a link to the order information.
+<details><summary>Profile</summary>
+<img src="documentation/features/profile/profile.png">
+</details>
+<details><summary>Order info</summary>
+<img src="documentation/features/profile/order_info.png">
+</details>
+
+### Product Management
+- If you are admin over the page, you can add new products for sale by going to product management.
+- There you enter all the information that the admin wants to give the product.
+- At the bottom, you can add a product image
+- You have two buttons you can press, cancel or add product
+<details><summary>Product management</summary>
+<img src="documentation/features/product_management/product_management.png">
+</details>
 
 
-### Footer
+### Login
+- Enter your username and password and then press the login button to log in to the website.
+- Press the logout button and the user is logged out.
+<details><summary>Login</summary>
+<img src="documentation/features/Login_logout_signup/login.png">
+</details>
 
 
-### Sign-in
-
-
-### Sign-out
+### Logout
+- Press the logout button and the user is logged out.
+<details><summary>Logout</summary>
+<img src="documentation/features/Login_logout_signup/logout.png">
+</details>
 
 
 ### Sign-up
+- Write in all fields to register.
+- Press the signup button.
+- A confirmation email is sent to your email address.
+- You will receive an email with a link that you must click to verify your email address.
+- You come to the website to confirm email.
+- If you already have a login, you can press the link below to get to the login page.
+<details><summary>Signup</summary>
+<img src="documentation/features/Login_logout_signup/signup.png">
+</details>
+<details><summary>Verify email</summary>
+<img src="documentation/features/Login_logout_signup/verify_email.png">
+</details>
+<details><summary>Email</summary>
+<img src="documentation/features/Login_logout_signup/verify_email_mail.png">
+</details>
+<details><summary>Confirm email</summary>
+<img src="documentation/features/Login_logout_signup/confirm_email.png">
+</details>
+
+
 
 ## Products
 products are what is the main focus of the e-commerce website. Admins can add, edit, and delete the service, select the customized options, add related image, and descriptions.
