@@ -246,21 +246,41 @@ Font: Lato
 <img src="documentation/features/products/Reviews.png">
 </details>
 
-
-### Review
-
-
 ### Wishlist
-
+- The wishlist is only availabe for logged in users. A logged in user can add or delete a product to this list.
+- You can click on the product name to get to the product detail page.
+<details><summary>Wishlist</summary>
+<img src="documentation/features/wishlist/wishlist.png">
+</details>
 
 ### Shopping Bag
-
+- Products that you have added to your shopping bag end up here. 
+- The picture of the product is on the left together with the product name and which size you have chosen. 
+- On the right, we have how much the price is for a product, followed by how many products have been selected and the total amount for the product. 
+- You can update the quantity of products or remove your product from your shopping bag by changing the number and pressing update or if you want to remove the product press the remove button.
+- At the bottom of the page we have the total amount, shipping cost and grand total.
+- We have two buttons below, one that takes us back to the product page and the other goes to our checkout page.
+<details><summary>Shopping bag</summary>
+<img src="documentation/features/shopping_bag/shopping_bag.png">
+</details>
+<details><summary>Shopping bag grand total</summary>
+<img src="documentation/features/shopping_bag/shopping_bag_total.png">
+</details>
 
 ### Checkout
-
+- On the left side you enter your personal information including delivery information. If you are a logged in user, you can check a check box that you want to save your info to your profile page.
+- On the right side we have our order summary and the total grand total.
+- At the bottom of the page under delivery info, you enter your card details and if they are correct you can press the complete order button. If you want to change your shopping bag, press the adjust bag button to return to the checkout page.
+<details><summary>Checkout</summary>
+<img src="documentation/features/checkout/checkout.png">
+</details>
 
 ### Checkout success
-
+- On this page we have our order information.
+- We also have a button that takes us to the blog page.
+<details><summary>Checkout success</summary>
+<img src="documentation/features/checkout/checkout_success.png">
+</details>
 
 ### My profile
 
