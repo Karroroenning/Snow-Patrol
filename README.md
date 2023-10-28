@@ -219,14 +219,32 @@ Font: Lato
 - Under the navbar, we have the title of the blogpost and when it was created. 
 - Picture of the blogpost is to the right of the text.
 - To the left of the picture we have the content about the blog post.
-<details><summary>Bloglist</summary>
+<details><summary>Blogpost</summary>
 <img src="documentation/features/blog/blogpost.png">
 </details>
 
 ### Product page
-
+- Under the product heading we have links for the product categories. 
+- On the right we have a dropdown menu to be able to sort the products.
+- Products lined up. 4 posts per row.
+- Below the image we have the name of the product, the price, the category and what rating it has. If Admin is logged in, there are also two links with Edit and Delete. 
+- You can click on the image to get to the Product detail page.
+- Down in the right corner we have a button that takes us back to the top of the page.
+<details><summary>Product page</summary>
+<img src="documentation/features/products/products.png">
+</details>
 
 ### Product detail
+- On the right we have the product image. When you press it, the image opens in a separate tab.
+- On the left we have the product's name, price, category and rating. If Admin is logged in, there are also two links with Edit and Delete. 
+- Underneath we have the product description, a dropdown menu so you can choose the size of the product, choose the quantity of how many you want. Then we have three buttons, one that takes us back to the product page and one to add the product to the bag. If you are logged in, you also have a button so you can add the product to your wishlist.
+- At the bottom of the page we have a review section. Logged in users can leave a review about the product, update and delete their own review. If you are not logged in, you can only read reviews.
+<details><summary>Product detail</summary>
+<img src="documentation/features/products/product_detail.png">
+</details>
+<details><summary>Reviews</summary>
+<img src="documentation/features/products/Reviews.png">
+</details>
 
 
 ### Review
