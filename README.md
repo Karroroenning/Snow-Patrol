@@ -344,33 +344,38 @@ Font: Lato
 </details>
 
 
+## Future features
+
+- Like the blogpost.
+- Authenticated superuser can create a blog post without entering via the admin panel.
+- See pictures of the product in the wishlist.
 
 ## Products
-products are what is the main focus of the e-commerce website. Admins can add, edit, and delete the service, select the customized options, add related image, and descriptions.
+products are what is the main focus of the e-commerce website. Admins can add, edit, and delete a product, add related image, and descriptions.
 
 ### CRUD
-- **Create:** If the user is an authenticated superuser, they can add a new service by clicking the profile icon in the top right corner and selecting Add service
-- **Read:** All users can view the current services in the services section
-- **Update:** Only admins can edit the existing service
-- **Delete:** Only admins can delete the existing service
+- **Create:** If the user is an authenticated superuser, they can add a new product by clicking the my account icon in the top right corner and click on Product Management.
+- **Read:** All users can view all the product and read about them in the product navbar.
+- **Update:** Only admins can edit the products.
+- **Delete:** Only admins can delete the products.
 
 ## Reviews
-Registered users can review every order made. The option "Review me!" is added to the order history accessible via the profile page.
+Registered users can leave a review about every product. 
 
 ### CRUD
-- **Create:** After the order is paid, the registered user can add a review
-- **Read:** All users can view the current reviews in the customer ratings section
-- **Update:** Only the author of the review can edit the review via frontend
-- **Delete:** Only the author of the review can delete the review via frontend
+- **Create:** If the user is logged in, they can go to the product and leave a review about it.
+- **Read:** All users, even those who are not logged in, can read all reviews written about the product.
+- **Update:** Only the author of the review can edit the review via frontend.
+- **Delete:** Only the author of the review can delete the review via frontend.
 
 ## Blog
-Admins (superusers) can add blog posts in the blog sections. The reason for this is to convince potential buyers that we are reliable in what we do and that we know our stuff (all posts are related to the services we provide).
+Administrators (superusers) can add blog posts to the blog section by entering via the admin panel and creating a blog post. The reason for this is to give users the feeling that we are a whole family that likes the same things, snowboarding and to give insperation
 
 ### CRUD
-- **Create:** Admins can add new blog posts to the blog page
-- **Read:** All users can read the current blog posts listed in the blog section
-- **Update:** Admins can edit the existing blog posts on the blog page
-- **Delete:** Admins can delete existing blog posts on the blog page
+- **Create:** Admins can add new blog posts to the blog page.
+- **Read:** All users can read the current blog posts listed in the blog section.
+- **Update:** Admins can edit the existing blog posts via the admin panel.
+- **Delete:** Admins can delete existing blog posts via the admin panel.
 
 
 ## Manual Testing
