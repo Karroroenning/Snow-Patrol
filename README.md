@@ -766,39 +766,38 @@ For the performance, accessibility, best practices, and SEO of the site for mobi
 
 
 <details><summary>- Index Page</summary>
-<img src="" >
+<img src="documentation/validator/lighthouse/index.png" >
 </details>
 <details><summary>- Shopping Bag</summary>
-<img src="" >
+<img src="documentation/validator/lighthouse/shopping_bag.png" >
 </details>
 <details><summary>- Products</summary>
-<img src="" >
+<img src="documentation/validator/lighthouse/product.png" >
 </details>
 <details><summary>- Product detail</summary>
-<img src="" >
+<img src="documentation/validator/lighthouse/product_detail.png" >
 </details>
-<details><summary>- Blogpost</summary>
-<img src="" >
+<details><summary>- Bloglist</summary>
+<img src="documentation/validator/lighthouse/bloglist.png" >
 </details>
 <details><summary>- Blogpost detail</summary>
-<img src="" >
+<img src="documentation/validator/lighthouse/blog_detail.png" >
 </details>
 <details><summary>- Checkout</summary>
-<img src="" >
+<img src="documentation/validator/lighthouse/checkout.png" >
 </details>
 <details><summary>- Checkout Success</summary>
-<img src="" >
-</details>
-<details><summary>- Add product</summary>
-<img src="" >
+<img src="documentation/validator/lighthouse/checkout_success.png" >
 </details>
 <details><summary>- Profile</summary>
-<img src="" >
+<img src="documentation/validator/lighthouse/profile.png" >
 </details>
 <details><summary>- Wishlist</summary>
-<img src="" >
+<img src="documentation/validator/lighthouse/wishlist.png" >
 </details>
-
+<details><summary>- Product Management</summary>
+<img src="documentation/validator/lighthouse/product_management.png" >
+</details>
 
 - Desktop performed well on all major pages of the site.
 - The 83-point score for Best Practices is due to the scripts beyond my control (e.g. Mailchimp)

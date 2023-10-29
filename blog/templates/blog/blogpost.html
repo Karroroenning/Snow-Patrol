@@ -22,10 +22,10 @@
                 <div class="card grow shadow">
                     <a href="{% url 'blogpost_detail' blogpost.slug %}">
                     {% if "placeholder" in blogpost.featured_image.url %}
-                        <img class="card-img-top blog-detail-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.blogpost.title }}" style="height: 300px;">
+                        <img class="card-img-top blog-detail-img" src="{{ MEDIA_URL }}noimage.png" alt="Blog placeholder image" style="height: 300px;">
                     </a>
                     {% else %}
-                        <img class="card-img-top blog-detail-img" src=" {{ blogpost.image.url }}" alt="{{ item.blogpost.title }}" style="height: 300px;">
+                        <img class="card-img-top blog-detail-img" src=" {{ blogpost.image.url }}" alt="Blog image" style="height: 300px;">
                     {% endif %}
                     <div class="card-body">
                         <a href="{% url 'blogpost_detail' blogpost.slug %}">
