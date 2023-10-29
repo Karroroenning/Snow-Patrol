@@ -159,18 +159,12 @@ The development of this project was managed and implemented using GitHub Project
 
 I have kept the colors very simple. Black and white. Because there are already a lot of other colors from all the product images and blog post images. The fact that the basic colors are black and white means that the focus is more on the products. This is an e-commerce website and our goal is for the focus to fall on our goal, the products!
 
-### Typography:
-
-All fonts were obtained from the Google Fonts library. I have chosen the same font throughout the web page. A simple typeface that does very well with the rest.
-
-Font: Lato
-
 ### Imagery:
 
 - On the first page, I have a picture that I think is a good picture for a first impression that snowboarding is more than just going down a slope. It can also be sporty and peaceful in a beautiful nature.
 
 <details><summary>Hero Image</summary>
-<img src="" >
+<img src="media/pexels-jeffrey-brandjes-6835492.jpg" >
 </details>
 
 <br>
@@ -178,7 +172,7 @@ Font: Lato
 
 - Up in the left corner, we have our own designed logo. The logo should resemble a mountain and a bar-code. The mountain should symbolize slope and the bar-code is that it is an e-commerce website.
 <details><summary>Logo</summary>
-<img src="" >
+<img src="media/snowpatrol-low-resolution-logo-black-on-white-background.png" >
 </details>
 
 <br>
@@ -350,78 +344,199 @@ Font: Lato
 - Authenticated superuser can create a blog post without entering via the admin panel.
 - See pictures of the product in the wishlist.
 
-## Products
-products are what is the main focus of the e-commerce website. Admins can add, edit, and delete a product, add related image, and descriptions.
+## CRUD
 
-### CRUD
+### Products
+Products are what is the main focus of the e-commerce website. Admins can add, edit, and delete a product, add related image, and descriptions.
+
+#### CRUD
 - **Create:** If the user is an authenticated superuser, they can add a new product by clicking the my account icon in the top right corner and click on Product Management.
 - **Read:** All users can view all the product and read about them in the product navbar.
 - **Update:** Only admins can edit the products.
 - **Delete:** Only admins can delete the products.
 
-## Reviews
+### Reviews
 Registered users can leave a review about every product. 
 
-### CRUD
+#### CRUD
 - **Create:** If the user is logged in, they can go to the product and leave a review about it.
 - **Read:** All users, even those who are not logged in, can read all reviews written about the product.
 - **Update:** Only the author of the review can edit the review via frontend.
 - **Delete:** Only the author of the review can delete the review via frontend.
 
-## Blog
+### Blog
 Administrators (superusers) can add blog posts to the blog section by entering via the admin panel and creating a blog post. The reason for this is to give users the feeling that we are a whole family that likes the same things, snowboarding and to give insperation
 
-### CRUD
+#### CRUD
 - **Create:** Admins can add new blog posts to the blog page.
 - **Read:** All users can read the current blog posts listed in the blog section.
 - **Update:** Admins can edit the existing blog posts via the admin panel.
 - **Delete:** Admins can delete existing blog posts via the admin panel.
 
-
-## Manual Testing
-
-### Not logged in:
-
-### Homepage
-I have manually tested every link on the homepage to ensure that it redirects to the appropriate url. 
-
 # Testing
 ## Manual Testing
- | Feature | Test  | Expected Result | Actual Result |
-| -------------| ----- | ----- | :----: |
-| PACK AND STASH  | Selecting logo on homepage |  directs user back to homepage |  Pass |
-| Search | Using the search box | Entering a search returns expected result  |  Pass |
-| Search no results | No search | Entering a no results search returns error message and shows all products  |  Pass |
-| Navigation Links  | Selecting navigation links |  directs user to relevant pages |  Pass |
-| All products  | Selecting all products |  directs user to all products |  Pass |
-| Back to top | Back to top arrow | Select the arrow box on the products page brings the user back to the top of the page  |  Pass |
-| Sort By  | Selecting the filter Sort |  successfully sort by price, name and category options |  Pass |
-| Shop Now button  | Selecting Shop Now button |  directs user to all  products page |  Pass |
-| About Us | Selecting About Us |  directs user to About Us page |  Pass |
-| Sign up for our newsletter | selecting Sign up for our newsletter |  directs user Sign up for our newsletter page |  Pass |
-| Privacy policy | Selecting privacy policy |  directs user to privacy policy|  Pass |
-| facebook icon | Selecting  facebook icon |  directs user to facebook page |  Pass |
-| Special offers | Selecting all specials |  directs user to all special offers |  Pass |
-| Blog | Selecting blog |  directs user to blog page |  Pass |
-| Blog detail | Selecting Blog detail |  directs user to blog detail |  Pass |
-| Leave a Comment when signed in | Submitting comment|  successfully submit and display comment |  Pass |
-| Add blog | Adding a new blog | successfully add new blog to blog page  |  Pass |
-| As Admin edit blog | editing blog|  successfully edited the blog |  Pass |
-| As Admin Delete Comment | Deleting comment|  successfully remove comment |  Pass |
-| Contact | Selecting Contact | directs user to contact page  |  Pass |
-| Contact form submission | submitting contact form | successfully sends submit form and can seen be in admin |  Pass |
-| My account | Selecting my account as admin | displays dropdown menu unique to admin apart from profile and logout  |  Pass |
-| Add product | Adding a new product| successfully add new product to products page  |  Pass |
-| Add Product | no image is selected | default image is used |  Pass |
-| As Admin edit product | editing product |  successfully edited the product |  Pass |
-| As Admin Delete product | Deleting product|  successfully remove product |  Pass |
-| Register | Register for an account | selecting Register in my account directs user signup page |  Pass |
-| Register | Registering as a new user | Registering as a new user form works |  Pass |
-| Login | Login to an account | selecting Login in my account directs user to Login page |  Pass |
-| Login | Login to an account | login-in as a new user form works |  Pass |
-| Login as admin| Login to as admin gives access to blog/product management | login-in as a new user form works |  Pass |
-| Logout | message shown | Logging out message shown |  Pass |
 
+#### Manual Testing
+
+> If the intended outcome completes then this will be flagged as pass. If it does not then this is a fail.
+
+
+<details>
+<summary>Account Registration Tests </summary>
+<br>
+
+| Test |Result  |
+|--|--|
+|User can create an account | Pass |
+|Verified User can log into account| Pass|
+|User can log out of account|Pass|
+|User is notified of logging in to account|Pass|
+|User is notified of logging out of account|Pass|
+|User receives email verification email|Pass|
+
+</details>
+
+---
+
+
+<details>
+<summary>Account Login Tests </summary>
+<br>
+
+| Test |Result  |
+|--|--|
+|Verified User can log into account| Pass|
+|Non verified User is notified The username and/or password are not correct.|Pass|
+|User can log out of account|Pass|
+|User is notified of logging in to account|Pass|
+|User is notified of logging out of account|Pass|
+
+
+</details>
+
+---
+
+<details>
+<summary>User Navigation Tests</summary>
+<br>
+
+| Test |Result  |
+|--|--|
+|User can navigate to product| Pass |
+|User can access product details| Pass|
+|User can add a product to cart|Pass|
+|User can navigate back to products|Pass|
+|User can add additional products to cart|Pass|
+|User can add multiple quantities of a product |Pass|
+|User can navigate to cart|Pass|
+|Logged in User can navigate to the profile section of accounts|Pass|
+|User can access their saved address information|Pass|
+|User can access past orders|Pass|
+|User can access the blog section of the page|Pass|
+|User can access specific blogs|Pass|
+|User can access the review section|pass|
+|Logged in User can review any product|pass|
+|Logged in User can edit or delete their reviews|pass|
+|Logged in User can add to his/her wishlist|pass|
+|All links on footer open to correct pages|Pass|
+|All links on Heading Navigation open to correct option|Pass|
+|User can use the search box|Pass|
+|User entering a no results search returns error message|Pass|
+
+</details>
+
+---
+
+<details>
+<summary>Account Security Tests</summary>
+<br>
+
+| Test |Result  |
+|--|--|
+|Not logged in User cannot make review | Pass |
+|Not logged in User cannot add products to wishlist|Pass|
+|Not logged in User cannot access profile page| Pass|
+|Not logged in User cannot access admin panel|Pass|
+|Not logged in User cannot access products management|Pass|
+|Not logged in user cannot access wishlist page|Pass|
+|Logged in User cannot access admin panel|Pass|
+|Logged in User cannot access products management|Pass|
+|Logged in User cannot edit products|Pass|
+|Logged in User can leave reviews about the products|Pass|
+|Logged in User can add products to wishlist|Pass|
+
+</details>
+
+--- 
+
+<details>
+<summary>Profile Tests</summary>
+<br>
+
+| Test |Result|
+|--|--|
+|Not logged in User cannot access profile page | Pass |
+|Logged in User can access profile page|Pass|
+|Logged in User can see their details on the accounts home page|Pass|
+|Logged in User can update their email|Pass|
+|Logged in User can navigate to their shipping information|Pass|
+|Logged in User can update street address 1 and 2|Pass|
+|Logged in User can update town or city|Pass|
+|Logged in User can update county|Pass|
+|Logged in User can update postcode|Pass|
+|Logged in User can update country|Pass|
+|Pop-up modal prompts the user to confirm sign out before signing out|Pass|
+
+</details>
+
+---
+
+<details>
+<summary>Admin Tests</summary>
+<br>
+
+| Test |Result  |
+|--|--|
+|Super User can access add product page from my account dropdown|Pass|
+|Super User can see the edit product button on the products page|Pass|
+|Super User can see the delete button on the products page|Pass|
+|Super User can write blogs from the admin panel and publish them|Pass|
+|Super User can edit blog detail and update all fields successfully from the admin panel|Pass|
+|Super User can delete blog from the from the admin panel|Pass|
+|Super User can approve reviews from the admin panel|Pass|
+
+</details>
+
+---
+
+<details>
+<summary>Payment Tests</summary>
+<br>
+
+| Test |Result  |
+|--|--|
+|User can successfully make a payment & order| Pass|
+|All users receive an email confirmation of order on deployed site|Pass|
+|In development email confirmation is printed to terminal|Pass|
+|In production email confirmation is sent to user|Pass|
+|If payment is successful user will be redirected to order success page|Pass|
+|If order fails due to incorrect information being submitted order will not be submitted|Pass|
+|If there is an error when processing the order the site returns a 500 error without processing order|Pass|
+
+</details>
+
+---
+
+<details>
+<summary>Other Tests</summary>
+<br>
+
+| Test |Result  |
+|--|--|
+|User can Sign up for our newsletter|Pass|
+|User can read about Privacy policy|Pass|
+
+</details>
 
 ### Browsers
 - I checked the site for compatibility on different browsers.
@@ -510,141 +625,136 @@ I have manually tested every link on the homepage to ensure that it redirects to
 </details>
 
 #### CSS files pass through the Jigsaw validator with no issues found.
-<details><summary>- base.css</summary>
-<img src="" >
-</details>
-
-<details><summary>- blog.css</summary>
-<img src="" >
-</details>
-
-<details><summary>- checkout.css</summary>
-<img src="" >
-</details>
-
-<details><summary>- home.css</summary>
-<img src="" >
-</details>
-
-<details><summary>- profile.css</summary>
-<img src="" >
+<details><summary>- CSS</summary>
+<img src="documentation/validator/css/css_validator.png" >
 </details>
 
 
 #### Python files have been through the validator and have no issues.
 <details><summary>- Bag context.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/bag/contexts.py.png" >
+</details>
+<details><summary>- Bag urls.py</summary>
+<img src="documentation/validator/pep8/bag/urls.py.png" >
 </details>
 <details><summary>- Bag views.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/bag/views.py.png" >
 </details>
 <details><summary>- Blog admin.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/blog/admin.py.png" >
 </details>
 <details><summary>- Blog forms.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/blog/forms.py.png" >
 </details>
 <details><summary>- Blog models.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/blog/models.py.png" >
 </details>
 <details><summary>- Blog urls.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/blog/urls.py.png" >
 </details>
 <details><summary>- Blog views.py</summary>
-<img src="" >
-</details>
-<details><summary>- Blog .py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/blog/views.py.png" >
 </details>
 <details><summary>- checkout admin.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/checkout/admin.py.png" >
 </details>
 <details><summary>- checkout forms.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/checkout/forms.py.png" >
 </details>
 <details><summary>- checkout models.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/checkout/models.py.png" >
 </details>
 <details><summary>- checkout signals.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/checkout/signals.py.png" >
 </details>
 <details><summary>- checkout urls.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/checkout/urls.py.png" >
 </details>
 <details><summary>- checkout views.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/checkout/views.py.png" >
 </details>
 <details><summary>- checkout webhook_handler.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/checkout/webhook_handler.py.png" >
 </details>
 <details><summary>- checkout webhooks.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/checkout/webhook.py.png" >
 </details>
 <details><summary>- home urls.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/home/urls.py.png" >
 </details>
 <details><summary>- home views.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/home/views.py.png" >
 </details>
 <details><summary>- products admin.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/products/admin.py.png" >
 </details>
 <details><summary>- products forms.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/products/forms.py.png" >
 </details>
 <details><summary>- products models.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/products/models.py.png" >
 </details>
 <details><summary>- products urls.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/products/urls.py.png" >
 </details>
 <details><summary>- products views.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/products/views.py.png" >
 </details>
 <details><summary>- products widgets.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/products/widgets.py.png" >
 </details>
 <details><summary>- profiles forms.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/profiles/forms.py.png" >
 </details>
 <details><summary>- profiles models.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/profiles/models.py.png" >
 </details>
 <details><summary>- profiles urls.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/profiles/urls.py.png" >
 </details>
 <details><summary>- profiles views.py</summary>
-<img src="" >
-</details>
-<details><summary>- wishlist admin.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/profiles/views.py.png" >
 </details>
 <details><summary>- wishlist models.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/wishlist/models.py.png" >
 </details>
 <details><summary>- wishlist urls.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/wishlist/urls.py.png" >
 </details>
 <details><summary>- wishlist views.py</summary>
-<img src="" >
+<img src="documentation/validator/pep8/wishlist/views.py.png" >
+</details>
+<details><summary>- snowpatrol urls.py</summary>
+<img src="documentation/validator/pep8/snowpatrol/urls.py.png" >
+</details>
+<details><summary>- snowpatrol views.py</summary>
+<img src="documentation/validator/pep8/snowpatrol/views.py.png" >
 </details>
 
 #### Javascript file have been through the validator and it takes no arguments.
-The function works without problems and I see that I have undefined variable and unused variables. I tried to fix a google maps from Code institute lessons. But did not go through JsHint. So the code I have now is from Google's own tutorial. Tried to fix the code so I didn't need what is circled in the picture, but unfortunately didn't succeed.
-<details><summary>- checkout stripe_elements.js</summary>
-<img src="" >
+The function works without problems.
+<details><summary>- checkout_stripe_elements.js</summary>
+<img src="documentation/validator/jigsaw/checkout_stripe_elements.png" >
 </details>
-<details><summary>- profiles countryfield.js</summary>
-<img src="" >
+<details><summary>- profiles_countryfield.js</summary>
+<img src="documentation/validator/jigsaw/profile_countryfield.png" >
 </details>
 
 ## Defensive Validation
 
-<details><summary>- When I am not logged in and try to access a page in logged in mode.</summary>
-<img src="" >
+<details><summary>- When not logged in user try to access a page in logged in mode.</summary>
+<img src="documentation/validator/defensive_validation/no_access_page.png" >
 </details>
 
-If a non-logged-in guest tries to access the add recipes, edit page, delete page, and contact page, they are prompted to log in. If at login they are identified as a logged in user, they are taken to the pages. Otherwise they are taken to the page screenshot above.
+
+<details><summary>- When user try to access a page that doesn't exist.</summary>
+<img src="documentation/validator/defensive_validation/404.png" >
+</details>
+
+<details><summary>- When logged in user try to access a superuser page.</summary>
+<img src="documentation/validator/defensive_validation/no_access_page_super_user.png" >
+</details>
+
 
 ## Accessibility
 
