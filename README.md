@@ -121,41 +121,66 @@ The development of this project was managed and implemented using GitHub Project
 - This was done in Balsamiq Wireframes. 
 
 <details><summary>Home Page</summary>
-<img src="" >
+<img src="documentation/wireframes/index.png" >
 </details>
 
 <details><summary>Product Page</summary>
-<img src="" >
+<img src="documentation/wireframes/products.png" >
 </details>
 
 <details><summary>Product Detail</summary>
-<img src="" >
+<img src="documentation/wireframes/products_detail.png" >
 </details>
 
 <details><summary>Blog list</summary>
-<img src="" >
-<img src="" >
+<img src="documentation/wireframes/blogpost.png" >
 </details>
 
 <details><summary>Blogpost</summary>
-<img src="" >
+<img src="documentation/wireframes/blog_detail.png" >
+</details>
+
+<details><summary>Checkout</summary>
+<img src="documentation/wireframes/checkout.png" >
+</details>
+
+<details><summary>Checkout success</summary>
+<img src="documentation/wireframes/checkout_success.png" >
+</details>
+
+<details><summary>Product Management</summary>
+<img src="documentation/wireframes/product_management.png" >
+</details>
+
+<details><summary>Profile</summary>
+<img src="documentation/wireframes/profile.png" >
+</details>
+
+<details><summary>Shopping bag</summary>
+<img src="documentation/wireframes/shopping_bag.png" >
+</details>
+
+<details><summary>Wishlist</summary>
+<img src="documentation/wireframes/wishlist.png" >
 </details>
 
 <details><summary>Signup</summary>
-<img src="" >
+<img src="documentation/wireframes/signup.png" >
 </details>
 
 <details><summary>Login</summary>
-<img src="" >
+<img src="documentation/wireframes/login.png" >
 </details>
 
 <details><summary>Logout</summary>
-<img src="" >
+<img src="documentation/wireframes/logout.png" >
 </details>
 
 
 ### Color Scheme
-<img src="" >
+<details><summary>Color Scheme</summary>
+<img src="documentation/snowpatrol.png" >
+</details>
 
 I have kept the colors very simple. Black and white. Because there are already a lot of other colors from all the product images and blog post images. The fact that the basic colors are black and white means that the focus is more on the products. This is an e-commerce website and our goal is for the focus to fall on our goal, the products!
 
@@ -760,7 +785,7 @@ The function works without problems.
 
 ## Lighthouse
 
-For the performance, accessibility, best practices, and SEO of the site for mobile and desktop I used the Chrome Lighthouse tool:
+For the performance, accessibility, best practices, and SEO of the site for desktop I used the Chrome Lighthouse tool:
 
 #### Desktop Results
 
@@ -798,50 +823,6 @@ For the performance, accessibility, best practices, and SEO of the site for mobi
 <details><summary>- Product Management</summary>
 <img src="documentation/validator/lighthouse/product_management.png" >
 </details>
-
-- Desktop performed well on all major pages of the site.
-- The 83-point score for Best Practices is due to the scripts beyond my control (e.g. Mailchimp)
-
-#### Mobile Results
-
-<details><summary>- Index Page</summary>
-<img src="" >
-</details>
-<details><summary>- Shopping Bag</summary>
-<img src="" >
-</details>
-<details><summary>- Products</summary>
-<img src="" >
-</details>
-<details><summary>- Product detail</summary>
-<img src="" >
-</details>
-<details><summary>- Blogpost</summary>
-<img src="" >
-</details>
-<details><summary>- Blogpost detail</summary>
-<img src="" >
-</details>
-<details><summary>- Checkout</summary>
-<img src="" >
-</details>
-<details><summary>- Checkout Success</summary>
-<img src="" >
-</details>
-<details><summary>- Add product</summary>
-<img src="" >
-</details>
-<details><summary>- Profile</summary>
-<img src="" >
-</details>
-<details><summary>- Wishlist</summary>
-<img src="" >
-</details>
-
-
-- Mobile performed well on all major pages of the site.
-- The 83-point score for Best Practices is due to the scripts beyond my control (e.g. Mailchimp)
-
 
 ## Fixed bugs
 
