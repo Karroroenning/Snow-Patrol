@@ -1,10 +1,8 @@
 # Snowpatrol
 
 
-![Am I Responsive image]()
+![Am I Responsive image](documentation/am_I_responsive.png)
 
-Snowpatrol is a fictional B2C e-commerce store that is designed and implemented with Python and Django, HTML, CSS and some Javascript. 
-However it has to be noted that this site is for educational use only.
 
 Please view the live website here: [Snowpatrol](https://snowpatrol-6b2d334410bf.herokuapp.com/ "Snowpatrole Homepage").
 <br>
@@ -48,6 +46,95 @@ My Repository can you see here: [Repository](https://github.com/Karroroenning/Sn
 * [Technologies Used](#technologies-used)
 * [Deployment](#deployment)
 * [Credits](#credits)
+
+## Business modal
+Snowpatrol is a fictional B2C e-commerce store that is designed and implemented with Python and Django, HTML, CSS and some Javascript. 
+However it has to be noted that this site is for educational use only.
+
+### Business overview
+
+#### Which page will the user first see when they visit the page.
+- It will be the Home page
+
+#### The first page will include
+- The contents will be clear for the users. Simple to see what the site includes. Snowboarding is a winter sport that can be calm and cozy or more speed and wind. The majority of users who decide to snowboard are looking for more speed and adrenaline. Then we will try to emphasize that desire on our website. 
+- The age groups for snowboarding in particular are variable from young children up to middle age. So our content should focus mostly on middle age and a little below.
+- Our goal is to bring out action, so we will have a hero image that will show a lovely mix between nature and a bit of freestyle. So you get a better feel for what it's like to snowboard.
+
+# SEO
+
+## SEO Project planning
+
+Once the business model was decided as a snowboard shop, I started working on how to market the site and what keywords to target.
+
+I started searching on google and checked how many search results I got on each search and which keywords were most attractive.
+
+## Keywords
+
+### Snowboard
+#### Short keyword
+
+- Snowboard
+- Snow
+- Snowsports
+- Mountain sports
+- Snow nature
+- Universal Snowboard
+- Snowboarding gear
+
+#### Long keyword
+
+- Want to buy a snowboard in the right size
+- What should I pack first time snowboarding
+
+### Snowboard boots
+#### Short keyword
+
+- Snowshoes
+- Snowboard shoes
+- Warm snowshoes
+
+#### Long keyword
+
+- Most comfortable snowboard boots
+- Good quality snowboard boots that last for off-piste
+
+### Snowboard bindings
+#### Short keyword
+
+- Bindings
+- Step in Bindings
+
+#### Long keyword
+- Buy snowboard bindings in sweden
+- Easiest snowboard bindings to get in and out of 
+
+### Sport gifts
+#### Short keyword
+- Snow adventure
+- Snowboarding near me
+- Snowboard store
+
+#### Long keyword
+- What to buy to someone who likes snowboarding
+
+
+### Sitemap.xml
+I generated a sitemap for the site so that once ready engines like google can search it effectively.
+
+### Robots.txt
+I generated a robots.txt file so that google could crawl the site. I have blocked off the accounts app as there is no benefit for google to crawl those pages.
+
+### Logo
+The logo of the site was made with an online app from LOGO(logo.com)
+
+### Facebook Business Page
+
+To view the facebook business page you can click on the link below:
+
+[Facebook Business Page](https://www.facebook.com/profile.php?id=100091956826416)
+
+In case the page becomes inactive or deactivated by Facebook I have taken screenshots to display here also:
 
 ## UX
 ### Site Purpose
@@ -827,13 +914,6 @@ For the performance, accessibility, best practices, and SEO of the site for desk
 ## Fixed bugs
 
 ### Bug 1
-- 
-- - <details><summary>I was missing the L in HTML.</summary>
-    <img src="" >
-    </details>
-<br>
-
-### Bug 2
 
 - When I was going to make a purchase, it didn't work. The checkout page was not updated and on my dashboard on the stripe.com page, the payment was incomplete. I had help from tutor support and got help from Joanne. She asked if I exported my keys, STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY in my terminal every time I started my server and I did but still got an error message. When she tested the same with herself, it worked.
 
@@ -857,7 +937,7 @@ For the performance, accessibility, best practices, and SEO of the site for desk
     </details>
 <br>
 
-### Bug 3
+### Bug 2
 
 - I was trying to get all the products and categories from gitpod to heroku. I did not use fixtures. I added all products and categories from my admin panel. Everything was working great in gitpod when I was running runserver. I followed all the steps in Boutique Ado how to deploy to heroku and use AWS to store all media and static files. But when I open my site in heroku, only my static files work. My products showed 0. And when I went into Admin I had no categories or products like I had when I go into Admin via gitpod. I contacted tutor support for help. But that teacher seemed stressed and repeated everything I had already done but wanted me to do it again and check back at Boutique Ado. Redid everything again but couldn't get it to work. 
 
@@ -874,7 +954,7 @@ So I had to rethink and made my own fixtures with products and categories. After
     </details>
 <br>
 
-### Bug 4
+### Bug 3
 
 - When I placed an order via gitpod, everything works without problems. My order cost, delivery cost and total cost are correct. When I tried to place an order on the website via heroku, it becomes a double order in my order history and the order cost shows 0. However, if I went into stripe, it was 1 order and the total cost is correct.
 
@@ -892,7 +972,7 @@ I had written tha same function twice. It should throw an error as I've defined 
     </details>
 <br>
 
-### Bug 5
+### Bug 4
 
 - I couldn't get some of my images and some css over to heroku. In gitpod everything looked fine, but when I opened the page in heroku two of my images didn't work and it looked like my whole base.css didn't work either. I stored static and media on aws, when I checked there all files and images were uploaded. All images worked except my logo image which was in my base.html and the other image was in my index.html. And all the other css that I had in all the different apps worked as they should except base.css.
 
@@ -923,8 +1003,7 @@ My src attribute didn't have the {{ MEDIA_URL }} template tag - it just had 'med
 - SQL - Postgres
 
 ### Frameworks, Libraries & Programs Used
-- Google Fonts - for the font families:
-- Font Awesome - to add icons to the social links in the footer element.
+- Font Awesome - to add icons to the social links in the footer element and icons to my account and shopping bag.
 - GitHub - to store my repository for submission.
 - Balsamiq - were used to create mockups of the project prior to starting.
 - Am I Responsive? - to ensure the project looked good across all devices.
