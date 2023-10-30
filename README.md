@@ -835,16 +835,22 @@ For the performance, accessibility, best practices, and SEO of the site for desk
 
 #### Bug 2
 
-- 
-- 
-- - <details><summary>- </summary>
-    <img src="" >
+- When I was going to make a purchase, it didn't work. The checkout page was not updated and on my dashboard on the stripe.com page, the payment was incomplete. I had help from tutor support and got help from Joanne. She asked if I exported my keys, STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY in my terminal every time I started my server and I did but still got an error message. When she tested the same with herself, it worked. So we agreed to fix an env.py file with STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY instead. So she helped me to created my env.py and have set the stripe sk and pk to the os.environ values.
+
+<details><summary> Export my keys in the terminal.</summary>
+    <img src="documentation/bugs/first/terminal.png" >
     </details>
-- - <details><summary>- </summary>
-    <img src="" >
+<details><summary> The checkout page error message.</summary>
+    <img src="documentation/bugs/first/error_checkout.png" >
     </details>
-- - <details><summary>- </summary>
-    <img src="" >
+<details><summary>My dashboard on stripe.com </summary>
+    <img src="documentation/bugs/first/stipe_dashboard.png" >
+    </details>
+<details><summary>My env.py after Joanne helped me </summary>
+    <img src="documentation/bugs/first/env.py.png" >
+    </details>
+<details><summary>The import in my settings.py </summary>
+    <img src="documentation/bugs/first/import_in_settings.py.png" >
     </details>
 <br>
 
