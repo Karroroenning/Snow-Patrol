@@ -132,9 +132,16 @@ The logo of the site was made with an online app from LOGO(logo.com)
 
 To view the facebook business page you can click on the link below:
 
-[Facebook Business Page](https://www.facebook.com/profile.php?id=100091956826416)
+[Facebook Business Page](https://www.facebook.com/profile.php?id=61552855474003)
 
 In case the page becomes inactive or deactivated by Facebook I have taken screenshots to display here also:
+
+<details><summary>Facebook page</summary>
+<img src="documentation/facebook_page/facebook_1.png" >
+<img src="documentation/facebook_page/facebook_2.png" >
+<img src="documentation/facebook_page/facebook_3.png" >
+</details>
+
 
 ## UX
 ### Site Purpose
