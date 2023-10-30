@@ -826,16 +826,19 @@ For the performance, accessibility, best practices, and SEO of the site for desk
 
 ## Fixed bugs
 
-#### Bug 1
+### Bug 1
 - 
 - - <details><summary>I was missing the L in HTML.</summary>
     <img src="" >
     </details>
 <br>
 
-#### Bug 2
+### Bug 2
 
-- When I was going to make a purchase, it didn't work. The checkout page was not updated and on my dashboard on the stripe.com page, the payment was incomplete. I had help from tutor support and got help from Joanne. She asked if I exported my keys, STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY in my terminal every time I started my server and I did but still got an error message. When she tested the same with herself, it worked. So we agreed to fix an env.py file with STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY instead. So she helped me to created my env.py and have set the stripe sk and pk to the os.environ values.
+- When I was going to make a purchase, it didn't work. The checkout page was not updated and on my dashboard on the stripe.com page, the payment was incomplete. I had help from tutor support and got help from Joanne. She asked if I exported my keys, STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY in my terminal every time I started my server and I did but still got an error message. When she tested the same with herself, it worked.
+
+#### Solution
+ So we agreed to fix an env.py file with STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY instead. So she helped me to created my env.py and have set the stripe sk and pk to the os.environ values.
 
 <details><summary> Export my keys in the terminal.</summary>
     <img src="documentation/bugs/first/terminal.png" >
@@ -854,14 +857,58 @@ For the performance, accessibility, best practices, and SEO of the site for desk
     </details>
 <br>
 
-#### Bug 3
+### Bug 3
 
-- 
-- - <details><summary>- </summary>
-    <img src="" >
+- I was trying to get all the products and categories from gitpod to heroku. I did not use fixtures. I added all products and categories from my admin panel. Everything was working great in gitpod when I was running runserver. I followed all the steps in Boutique Ado how to deploy to heroku and use AWS to store all media and static files. But when I open my site in heroku, only my static files work. My products showed 0. And when I went into Admin I had no categories or products like I had when I go into Admin via gitpod. I contacted tutor support for help. But that teacher seemed stressed and repeated everything I had already done but wanted me to do it again and check back at Boutique Ado. Redid everything again but couldn't get it to work. 
+
+#### Solution
+So I had to rethink and made my own fixtures with products and categories. After I did that, it worked without a problem.
+
+<details><summary>- 42 products when I was running runserver in gitpop.</summary>
+    <img src="documentation/bugs/second/42_products_gitpod.png" >
+    <img src="documentation/bugs/second/42_products_gitpod_Admin.png" >
     </details>
-- - <details><summary>- </summary>
-    <img src="" >
+<details><summary>- 0 products when I open the app in heroku.</summary>
+    <img src="documentation/bugs/second/0_products_heroku.png" >
+    <img src="documentation/bugs/second/0_products_heroku_Admin.png" >
+    </details>
+<br>
+
+### Bug 4
+
+- When I placed an order via gitpod, everything works without problems. My order cost, delivery cost and total cost are correct. When I tried to place an order on the website via heroku, it becomes a double order in my order history and the order cost shows 0. However, if I went into stripe, it was 1 order and the total cost is correct.
+
+#### Solution
+I had written tha same function twice. It should throw an error as I've defined the same function twice, but it didn't. So I fixed the second function and it worked after that.
+
+<details><summary>- The problem and the function,</summary>
+    <img src="documentation/bugs/third/delivery_cost-0.png" >
+    <img src="documentation/bugs/third/dubbel_order_heroku_zero_cost.png" >
+    <img src="documentation/bugs/third/order_total_0.png" >
+    <img src="documentation/bugs/third/signals.png" >
+    </details>
+<details><summary>- The right function.</summary>
+    <img src="documentation/bugs/third/right_signals.png" >
+    </details>
+<br>
+
+### Bug 5
+
+- I couldn't get some of my images and some css over to heroku. In gitpod everything looked fine, but when I opened the page in heroku two of my images didn't work and it looked like my whole base.css didn't work either. I stored static and media on aws, when I checked there all files and images were uploaded. All images worked except my logo image which was in my base.html and the other image was in my index.html. And all the other css that I had in all the different apps worked as they should except base.css.
+
+#### Solution
+My src attribute didn't have the {{ MEDIA_URL }} template tag - it just had 'media'.  And I forgot to do a hard refresh so all my css would work.
+
+<details><summary>- My images or base.css didn't worked in heroku.</summary>
+    <img src="documentation/bugs/fourth/button_css_wont_work.png" >
+    <img src="documentation/bugs/fourth/some_pic_wont_work.png" >
+    </details>
+<details><summary>- My images and base.css worked in gitpod.</summary>
+    <img src="documentation/bugs/fourth/button_css_wont_work_works_gitpod.png" >
+    <img src="documentation/bugs/fourth/some_pic_wont_work_works_gitpod.png" >
+    </details>
+<details><summary>- What I missed.</summary>
+    <img src="documentation/bugs/fourth/media_url.png" >
     </details>
 <br>
 
