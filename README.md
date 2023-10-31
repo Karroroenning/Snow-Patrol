@@ -1018,126 +1018,111 @@ My src attribute didn't have the {{ MEDIA_URL }} template tag - it just had 'med
 - Django
 - Bootstrap
 
-### Modules used for the development of this project:
-<details><summary>- Requirements.</summary>
-    <img src="" >
-    </details>
 
 ## Deployment
 
-### Creating Database using ElephantSQL
+### Deployment to Heroku
 
-1. To generate a managed PostgreSQL database, please proceed to [ElephantSQL](https://customer.elephantsql.com/) and either sign up or sign in to your account. Once you've logged in, click on the 'Create New Instance' button.
-- - <details><summary>See Image</summary>
-    <img src="" >
+This application is deployed with Heroku.
+
+<details>
+  <summary>The steps for deploying through Heroku are as follows:</summary>
+  <br>
+
+1.  Visit Heroku and login
+2.  Click on New and then choose New App.
+3.  Choose a name for your app and then choose your region.
+4.  Ideally select the region closest to you
+5.  Then press 'Create app'.
+  
+</details>
+
+
+<details>
+  <summary>To attach The Database:</summary>
+  <br>
+
+1. Login or sign up to  [ElephantSQL](https://www.elephantsql.com/).
+2. Press create a new instance.
+3. Choose a name and plan. Then click on select region. 
+4. Select the closest Data Center to you
+5. Click on "Create Instance".
+6. Go back to the start page and click on your new database.
+7. Copy the URL for the database.
+  
+ </details>
+
+<br>
+
+- Go back to Heroku and click on the settings tab of your application.
+    
+- Click on "Reveal config vars".
+
+- Add a new config var named DATABASE_URL and paste in the URL from  ElephantSQL  as the value.
+
+- Go back to Gitpod or the IDE you are using and install two more requirements for the database:
+
+- In Gitpod install dj-database_url and psycopg2 to connect to your external database
+  
+- Update your requirements.txt file by typing in  `pip3 freeze --local > requirements.txt`
+
+- Add the DATABASE_URL to your env.py file or environment variables in gitpod.
+
+- Go to settings.py and  `import dj_database_url`
+
+- Comment out the default  `DATABASES`  setting.
+
+- Add this under the commented out section:
+
+``` DATABASES = {
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL')) }
+
+```
+Run migrations for the new database.
+
+1.  In the root directory of your project, create a file called "Procfile" and add  `web: gunicorn project_name.wsgi`  so Heroku will know what kind of application it is.
+    
+2.  In settings.py add ['app_name.heroku.com', 'localhost'] to  `ALLOWED_HOSTS`.
+    
+3.  Commit and push these changes to GitHub.
+    
+4.  In the Heroku settings tab of your project update the config vars to the following:
+
+| Key | Value  |
+| -- | -- |
+|AWS_ACCESS_KEY_ID|From AWS in CSV Download|
+|AWS_SECRET_ACCESS_KEY|From AWS in CSV Download|
+|DATABASE_URL|From ElephantSQL dashboard|
+|EMAIL_HOST_PASSWORD|App Password from Email Client|
+|EMAIL_HOST_USER|Email address|
+|SECRET_KEY|Randomly Generated Django Key|
+|STRIPE_PUBLIC_KEY|Publishable key from Stripe Dashboard|
+|STRIPE_SECRET_KEY|Secret key from Stripe Dashboard|
+|STRIPE_WH_SECRET|Signing secret from Stripe Webhooks Endpoint|
+|USE_AWS|True|
+
+- If you deploy at the beginning of the project then add the key value of: `DISABLE_COLLCETSTATIC`  and set it to 1. When you have  staticfiles to push then remove this variable.
+
+- Once the project is completed and you are no longer working on it set  `DEBUG`  =  `False`  in settings.py.
+
+- Log in to Heroku and select the deploy tab on your Heroku App and connect your GitHub account.
+
+- Search for your repository and connect it.
+
+- Once you have selected the correct repository, scroll down and click "Deploy Branch".
+
+- Watch the log as it deploys your project and ensure there are no errors.
+
+- If everything is correct it should deploy successfully.
+
+- Click on open app at the top of the page to view your deployed app.
+
+<br>
+
+Requirements.txt: This must be updated for deployment in Heroku. It stores data of libraries used for project
+<details><summary>See Image</summary>
+    <img src="documentation/requirements.png" >
     </details>
-
-2. Name your database and select the 'Tiny Turtle' payment plan. Then, click on 'Select Region'
-
-3. Select your preferred region and create the database instance.
-
-4.  After creating the instance, navigate to the instances page and click on the name of the database you selected earlier. Then, in the details section on the following page, copy the PostgreSQL URL.
-
-- - <details><summary>See Image</summary>
-    <img src="" >
-    </details>
-
-### Deploying the website in Heroko
-
-#### Before deploying in Heroku following files were created:
-
-1. env.py : stores confidential data eg. API keys, passwords etc.
-- - <details><summary>See Image</summary>
-    <img src="" >
-    </details>
-
-2. Procfile : Very important for deployment and must be added with capital P
-- - <details><summary>See Image</summary>
-    <img src="" >
-    </details>
-
-3. Requirements.txt: This must be updated for deployment in Heroku. It stores data of libraries used for project
-- - <details><summary>See Image</summary>
-    <img src="" >
-    </details>
-
-- The website was deployed to Heroko using following steps:
-
-#### Login or create an account at Heroku
-
-- Make an account in Heroko and login
-
-#### Creating an app
-
-- Create new app in the top right of the screen and add an app name.
-- Select region
-- Then click "create app".
-
-<details>
-<summary>Create App</summary>
-<img src="documentation/deployment/app_name.png" alt="Heroko create app screenshot">
-</details>
-
-#### Open settings Tab
-
-##### Click on config var
-
-- Store CLOUDINARY_URL file from in key and add the values
-- Store DATABASE_URL file from in key and add the values
-- Store SECRET_KEY file from in key and add the values
-- Store PORT in key and value
-
-NOTE: For initial deployment DISABLE_COLLECTSTATIC was also added
-
-<details>
-<summary>Config var</summary>
-<img src="documentation/deployment/configvars.png" alt="Config var screenshot">
-</details>
-
-##### Add Buildpacks
-
-- Add python buildpack
-
-<details>
-<summary>Buildpacks</summary>
-<img src="documentation/deployment/buildpacks.png" alt="Buildpacks screenshot">
-</details>
-
-#### Open Deploy Tab
-
-##### Choose deployment method and Connect to Github
-
-- Connect GITHUB
-- Login if prompted
-- Choose repositories you want to connect
-- Click "Connect"
-
-<details>
-<summary>Deployment method</summary>
-<img src="documentation/deployment/github_connect.png" alt="Github connect">
-</details>
-
-##### Automatic and Manual deploy
-
-- Choose a method to deploy
-- After Deploy is clicked it will install various file
-
-<details>
-<summary> Deploy methods</summary>
-<img src="documentation/deployment/deploy.png" alt="deploy method screenshot">
-</details>
-
-##### Final Deployment
-
-- A view button will display
-- Once clicked the website will open
-
-<details>
-    <summary> Deploy</summary>
-    <img src="documentation/deployment/deployment_view.png" alt="view screenshot">
-</details>
-
-The live link for "NonAlco4Me" can be found [HERE](https://non-alco-4me-427be0bd27b2.herokuapp.com/)
 
 ## Credits
 
