@@ -110,8 +110,6 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
-/* placeholder, där man skriver in sin egen info */
-
 input[name='q']::placeholder {
     color: #aab7c4;
 }
