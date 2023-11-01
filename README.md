@@ -9,39 +9,38 @@ Please view the live website here: [Snowpatrol](https://snowpatrol-6b2d334410bf.
 My Repository can you see here: [Repository](https://github.com/Karroroenning/Snow-Patrol "Repository").
 
 ## Table of contents
++ [Business modal](#business-modal)
+  + [Business overview](#business-overview)
++ [SEO](#seo)
+  + [SEO Project planning](#seo-project-planning)
+  + [Keywords](#keywords)
 + [UX](#ux)
   + [Site Purpose](#site-purpose)
   + [Site Goal](#site-goal)
-  * [Future Goals](#future-goals)
 * [User Stories](#user-stories)
   * [Site User](#as-a-site-user)
+  * [Logged in Site User](#as-a-login-user)
   * [Admin](#as-a-admin)
+* [Agile Methodology](#agile-methodology)
 * [Design](#design)
   * [Wireframes](#wireframes)
   * [Color Scheme](#color-scheme)
-  * [Typeography](#typography)
   * [Imagery](#imagery)
+* [Database diagram](#database-diagram)
 * [Features](#features)
-  * [Homepage](#homepage)
-  * [Add Recipes](#add-recipes)
-  * [Recipes Home](#recipes-home)
-  * [Recipes Detail](#recipes-detail)
-  * [Edit ecipes](#edit-recipes)
-  * [Delete ecipes](#delete-recipes)
-  * [Contact](#contact-page)
-  * [Sign-In](#sign-in)
-  * [Sign-Out](#sign-out)
-  * [Sign-Up](#sign-up)
+* [Future features](#future-features)
 * [C.R.U.D.](#crud)
-  * [Create](#create)
-  * [Read](#read)
-  * [Update](#update)
+  * [Products](#products)
+  * [Reviews](#reviews)
+  * [Blog](#blog)
   * [Delete](#delete)
-* [Manual Testing](#manual-testing)
-* [Admin Panel](#admin-panel)
-* [Validator Testing](#validator-testing)
-* [Defensive Validation](#defensive-validation)
+* [Testing](#testing)
+  * [Manual Testing](#manual-testing)
+  * [Browsers](#browsers)
+  * [Validator Testing](#validator-testing)
+  * [Defensive Validation](#defensive-validation)
 * [Accessibility](#accessibility)
+  * [Lighthouse](#lighthouse)
 * [Fixed bugs](#fixed-bugs)
 * [Technologies Used](#technologies-used)
 * [Deployment](#deployment)
@@ -143,7 +142,7 @@ In case the page becomes inactive or deactivated by Facebook I have taken screen
 </details>
 
 
-## UX
+# UX
 ### Site Purpose
 The purpose of the website is to be able to give users an opportunity to explore what is available to use within the world of snowboarding. Whether you are a beginner or a professional, there is always an option that suits them. Even when you have bought what you need, there is always a reason to visit the website again, because there is a blog that the admin updates a few times a week to update users about all the upcoming news, various tips on good slopes and even tips on how to think about how to wax the board for next season.
 
@@ -157,8 +156,6 @@ The purpose of the website is to be able to give users an opportunity to explore
 - To give users news or tips about what's happening in snowboarding.
 - Allow users to checkout quickly and easily.
 - To allow users to create a profile to view past orders and update profile information.
-
-### Future Goals
 
 
 ## User Stories
@@ -297,8 +294,13 @@ I have kept the colors very simple. Black and white. Because there are already a
 <br>
 - All other images are of the products and blog post images that the admin can add from the admin panel.
 
+## Database diagram
+<details><summary>Database diagram</summary>
+<img src="documentation/ERD.png" >
+</details>
+<br>
 
-## Features
+# Features
 
 ### Navbar and Footer
 - A navbar with nav-items to navigate to various pages in the website.
@@ -463,7 +465,7 @@ I have kept the colors very simple. Black and white. Because there are already a
 - Authenticated superuser can create a blog post without entering via the admin panel.
 - See pictures of the product in the wishlist.
 
-## CRUD
+# CRUD
 
 ### Products
 Products are what is the main focus of the e-commerce website. Admins can add, edit, and delete a product, add related image, and descriptions.
@@ -918,7 +920,7 @@ For the performance, accessibility, best practices, and SEO of the site for desk
 <img src="documentation/validator/lighthouse/product_management.png" >
 </details>
 
-## Fixed bugs
+# Fixed bugs
 
 ### Bug 1
 
@@ -1000,7 +1002,7 @@ My src attribute didn't have the {{ MEDIA_URL }} template tag - it just had 'med
 <br>
 
 
-## Technologies Used
+# Technologies Used
 ### Main Languages Used
 - HTML5
 - CSS3
@@ -1010,16 +1012,39 @@ My src attribute didn't have the {{ MEDIA_URL }} template tag - it just had 'med
 - SQL - Postgres
 
 ### Frameworks, Libraries & Programs Used
-- Font Awesome - to add icons to the social links in the footer element and icons to my account and shopping bag.
-- GitHub - to store my repository for submission.
-- Balsamiq - were used to create mockups of the project prior to starting.
-- Am I Responsive? - to ensure the project looked good across all devices.
-- Favicon - to provide the code & image for the icon in the tab bar.
-- Django
-- Bootstrap
+- [Bootstrap](https://getbootstrap.com/)
+- Was used to style the website, add responsiveness and interactivity
+- [Git](https://git-scm.com/)
+- Git was used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub
+- [GitHub](https://github.com/)
+- GitHub is used to store the project's code after being pushed from Git
+- [Heroku](https://id.heroku.com)
+- Heroku was used to deploy the live project
+- [PostgreSQL](https://www.postgresql.org/)
+- Database used through Heroku.
+- []()
+-  was used to create the database diagram
+- [CI Python Linter](https://pep8ci.herokuapp.com/#)
+- CI Python Linter was used to validate all the Python code
+- [W3C - HTML](https://validator.w3.org/)
+- W3C- HTML was used to validate all the HTML code
+- [W3C - CSS](https://jigsaw.w3.org/css-validator/)
+- W3C - CSS was used to validate the CSS code
+- [Fontawesome](https://fontawesome.com/)
+- Was used to add icons to the website
+- [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
+- To check App responsiveness and debugging
+- [Balsamiq](https://balsamiq.com/)
+- To build the wireframes for the project
+- [LOGO](https://logo.com/)
+- To build the logo for the project
+- [AWS](https://aws.amazon.com/)
+- was used to host the static files and media
+- [Chat GPT](https://chat.openai.com/)
+- I have used ChatGPT to write my blog articles.<br>
 
 
-## Deployment
+# Deployment
 
 ### Deployment to Heroku
 
@@ -1124,11 +1149,48 @@ Requirements.txt: This must be updated for deployment in Heroku. It stores data 
     <img src="documentation/requirements.png" >
     </details>
 
-## Credits
+# Credits
 
 ### Content
 
+- All the products content were taken from [BURTON](https://www.burton.com/gb/en/home)
+- The product images were taken from [BURTON](https://www.burton.com/gb/en/home)
+- The blogpost images were taken from [PEXELS](https://www.pexels.com/)
+- The Snowpatrol logo and favicon are my own designed and build from [LOGO](https://logo.com/)
+- To save time and also to try out some AI resources I have used ChatGPT to write my blog articles. [Chat GPT](https://chat.openai.com/)
+<br>
 
-## Images
+### Resources
 
-- The images on the homepage including recipes images are taken from [pexels.com](https://www.pexels.com/)
+####  Code Institute
+- The Code Institute 'Boutique Ado' walkthrough project assisted and guided in the setup and basic structure of this project.
+- The Code Institute - Hello Django - Walkthrough
+- The Code Institute - I think therefore I blog - Django blog project Walkthrough
+
+#### Repositories
+- I have taken help of various repositories for my readme and coding
+<br>
+[Pedro Cristo](https://github.com/PedroCristo/portfolio_project_5/tree/main)
+<br>
+[Pauline Rugwevera](https://github.com/pauline-rugwevera)
+<br>
+[Dee68](https://github.com/Dee68/pp5/tree/main)
+<br>
+[PPindel](https://github.com/PPindel/test-a-wheel/tree/0c046372aa5c8eb0e45a575fd59af916244c025e)
+
+- I also sourced information and help from a variety of sources such as Slack Community Channels, W3Schools, and YouTube for Online Web Tutorials and resources.
+- When I get stuck, I have received incredibly good help from tutor support. 
+<br>
+John, Joanne, Oisin and Roman
+
+## Media
+
+### Images
+
+- The images on the homepage including blogpost images are taken from [pexels.com](https://www.pexels.com/)
+- The product images were taken from [BURTON](https://www.burton.com/gb/en/home)
+- The Snowpatrol logo and favicon are my own designed and build from [LOGO](https://logo.com/)
+
+# Acknowledgement and support
+
+
