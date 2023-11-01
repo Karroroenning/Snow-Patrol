@@ -665,84 +665,8 @@ Administrators (superusers) can add blog posts to the blog section by entering v
 
 ## Validator Testing
 #### HTML files pass through the W3C validator with no issues found.
-<details><summary>- Bag Total</summary>
-<img src="" >
-</details>
-
-<details><summary>- Bag</summary>
-<img src="" >
-</details>
-
-<details><summary>- Checkout Buttons</summary>
-<img src="" >
-</details>
-
-<details><summary>- Product image</summary>
-<img src="" >
-</details>
-
-<details><summary>- Product info</summary>
-<img src="" >
-</details>
-
-<details><summary>- Quantity form</summary>
-<img src="" >
-</details>
-
-<details><summary>- Blogpost detail</summary>
-<img src="" >
-</details>
-
-<details><summary>- Blogpost</summary>
-<img src="" >
-</details>
-
-<details><summary>- Checkout Success</summary>
-<img src="" >
-</details>
-
-<details><summary>- Checkout</summary>
-<img src="" >
-</details>
-
-<details><summary>- Index</summary>
-<img src="" >
-</details>
-
-<details><summary>- Add product</summary>
-<img src="" >
-</details>
-
-<details><summary>- Edit product</summary>
-<img src="" >
-</details>
-
-<details><summary>- Product detail</summary>
-<img src="" >
-</details>
-
-<details><summary>- Products</summary>
-<img src="" >
-</details>
-
-<details><summary>- Profile</summary>
-<img src="" >
-</details>
-
-<details><summary>- Base</summary>
-<img src="" >
-</details>
-
-<details><summary>- Footer</summary>
-<img src="" >
-</details>
-
-<details><summary>- Main nav</summary>
-<img src="" >
-</details>
-
-<details><summary>- Mobile top header</summary>
-<img src="" >
+<details><summary>- HTML</summary>
+<img src="documentation/validator/html/w3c.png" >
 </details>
 
 #### CSS files pass through the Jigsaw validator with no issues found.
