@@ -946,7 +946,7 @@ My src attribute didn't have the {{ MEDIA_URL }} template tag - it just had 'med
 - Heroku was used to deploy the live project
 - [PostgreSQL](https://www.postgresql.org/)
 - Database used through Heroku.
-- []()
+- [Miro](https://miro.com/)
 -  was used to create the database diagram
 - [CI Python Linter](https://pep8ci.herokuapp.com/#)
 - CI Python Linter was used to validate all the Python code
@@ -1116,5 +1116,8 @@ John, Joanne, Oisin and Roman
 - The Snowpatrol logo and favicon are my own designed and build from [LOGO](https://logo.com/)
 
 # Acknowledgement and support
-
+ - I greatly appreciate the tutors at Code Institute for their patience and support!
+ - The Code Institute Slack community for tips and guidance!
+ - My mentor Maritna Terlevic who responded quickly when I needed help and was clear about what needed to be done. Great support!
+ - My beloved husband who has taken care of everything in the home while I have been studying. Fed me, cleaned and took care of our newborn baby.
 
